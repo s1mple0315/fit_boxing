@@ -1,0 +1,41 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 18px; 
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #FEDD07;
+  color: #000; 
+}
+
+.btn-secondary {
+  background-color: #000; 
+  color: #fff; 
+  border: 1.24px solid #fff; /* White border */
+}
+
+.btn-with-arrow {
+  padding-right: 30px; /* Extra padding for the arrow */
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.btn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

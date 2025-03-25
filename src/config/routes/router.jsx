@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "../../pages/HomePage/HomePage";
 import Layout from "../../app/Layout";
+import GenericPage from "../../pages/GenericPage/GenericPage";
 
 const AppRouter = () => {
   return (

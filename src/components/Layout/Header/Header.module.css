@@ -1,0 +1,18 @@
+.headerWrapper {
+  background-color: #1b1b1b;
+  padding: 12px 28px;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.headerNav > a {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 120%;
+  font-weight: 500;
+  color: #fff ;
+}

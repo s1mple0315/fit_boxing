@@ -1,0 +1,19 @@
+.pageTopDescription {
+  margin: 0 20px;
+  border-radius: 80px;
+  background-color: #181818;
+  background-image: url("/assets/pages/pageTop.png");
+}
+
+.pageTopDescription > div > h1{
+    font-size: 96px;
+    line-height: 106px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.pageTopDescription > div > p{
+    font-size: 20px;
+    line-height: 168%;
+    color: #fff;
+}

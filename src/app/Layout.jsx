@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 
 import Header from "../components/Layout/Header/Header";
 import Footer from "../components/Layout/Footer/Footer";
+import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
 import styles from "./Layout.module.css";
 
 const Layout = ({ children }) => {

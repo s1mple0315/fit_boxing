@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import pageData from "../data/pages";
+import pageData from "../../data/pages";
 
 const Breadcrumb = () => {
   const { slug } = useParams();

@@ -11,13 +11,11 @@ const AppRouter = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
 
-          {pageData.map((page) => (
             <Route
-              key={page.slug}
-              path={`/${page.slug}`}
+              path={`/:slug`}
               element={<GenericPage pageData={pageData} />}
+              caseSensitive={false}
             />
-          ))}
         </Routes>
       </Layout>
     </Router>

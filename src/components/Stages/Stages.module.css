@@ -1,0 +1,38 @@
+/* src/components/Stages/Stages.module.css */
+.stages {
+  padding: 40px 20px;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.stagesContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stage {
+  margin-bottom: 40px;
+}
+
+.stageTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00a3e0;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.stageDescription {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+}

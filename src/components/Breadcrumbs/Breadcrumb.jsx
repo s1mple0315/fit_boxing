@@ -1,9 +1,12 @@
-import { Link, useParams } from "react-router-dom";
-import pageData from "../../data/pages";
+import { Link, useLocation } from "react-router-dom";
 
-const Breadcrumb = () => {
-  const { slug } = useParams();
-  const currentPage = pageData.find((page) => page.slug === slug);
+const Breadcrumb = ({ pageData }) => {
+  const location = useLocation();
+  const slug = location.pathname.split("/")[1] || "";
+
+  const currentPage = pageData.find(
+    (page) => page.slug.toLowerCase() === (slug || "").toLowerCase()
+  );
 
   return (
     <nav style={{ padding: "20px", backgroundColor: "#1C2526", color: "#fff" }}>

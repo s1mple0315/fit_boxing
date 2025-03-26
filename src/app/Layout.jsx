@@ -4,6 +4,7 @@ import Header from "../components/Layout/Header/Header";
 import Footer from "../components/Layout/Footer/Footer";
 import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
 import styles from "./Layout.module.css";
+import pageData from "../data/pages";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -11,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.layout}>
       <Header />
-      {!isHomePage && <Breadcrumb />}
+      {!isHomePage && <Breadcrumb pageData={pageData}/>}
       <main className="container">{children}</main>
       <Footer />
     </div>

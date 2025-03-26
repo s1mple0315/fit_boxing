@@ -2,6 +2,9 @@
 const pageData = [
   {
     slug: "fit-boxing",
+    title: "Fit Boxing",
+    description:
+      "Тренировка с элементами единоборств и фитнеса, работа с мешками под музыку.",
     topDescription: {
       title: "Fit Boxing",
       description:
@@ -37,6 +40,8 @@ const pageData = [
   },
   {
     slug: "stretching",
+    title: "Cтретчинг",
+    desctiption: "Упражнения на растяжку для улучшения гибкости и профилактики травм.",
     topDescription: {
       title: "Стретчинг",
       description:
@@ -67,6 +72,9 @@ const pageData = [
   },
   {
     slug: "cross-fit",
+    title: "Cross Fit",
+    description:
+      "Комплекс упражнений для всего тела, направленный на укрепление мышечного корсета.",
     topDescription: {
       title: "Cross Fit",
       description:
@@ -97,6 +105,8 @@ const pageData = [
   },
   {
     slug: "kick-boxing",
+    title: "Kick Boxing",
+    description: "Удары руками и ногами для развития силы и выносливости.",
     topDescription: {
       title: "Kick boxing",
       description:
@@ -127,6 +137,9 @@ const pageData = [
   },
   {
     slug: "yoga",
+    title: "Йога",
+    description:
+      "Гибкость, сила и внутренний баланс через растяжку и дыхательные практики.",
     topDescription: {
       title: "Йога",
       description:
@@ -157,6 +170,9 @@ const pageData = [
   },
   {
     slug: "trx",
+    title: "TRX",
+    description:
+      "Тренировка с подвесными тренажерами для укрепления всего тела.",
     topDescription: {
       title: "TRX",
       description:
@@ -187,6 +203,9 @@ const pageData = [
   },
   {
     slug: "massage",
+    title: "Массаж",
+    description:
+      "Расслабление, восстановление и снятие стресса с помощью различных техник массажа.",
     topDescription: {
       title: "Массаж",
       description:
@@ -217,6 +236,9 @@ const pageData = [
   },
   {
     slug: "hammam",
+    title: "Хаммам",
+    description:
+      "Зона релаксации с мягким освещением для восстановления после тренировок.",
     topDescription: {
       title: "Хаммам",
       description:

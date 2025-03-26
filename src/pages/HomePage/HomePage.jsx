@@ -1,9 +1,10 @@
+import NavigationGrid from "../../components/NavigationGrid/NavigationGrid"
 import styles from "./HomePage.module.css"
 
 const HomePage = () => {
   return (
     <div className={styles.homePage}>
-      <h1>HomePage</h1>
+      <NavigationGrid />
     </div>
   )
 }

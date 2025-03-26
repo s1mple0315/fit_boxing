@@ -1,0 +1,40 @@
+.card {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  width: 200px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  fill: #fff; 
+}
+
+.title {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.button {
+  background-color: #ffeb3b;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #fdd835;
+}

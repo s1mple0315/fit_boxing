@@ -1,0 +1,18 @@
+.grid {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}

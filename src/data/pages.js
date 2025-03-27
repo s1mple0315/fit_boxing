@@ -41,7 +41,7 @@ const pageData = [
   {
     slug: "stretching",
     title: "Cтретчинг",
-    desctiption: "Упражнения на растяжку для улучшения гибкости и профилактики травм.",
+    description: "Упражнения на растяжку для улучшения гибкости и профилактики травм.",
     topDescription: {
       title: "Стретчинг",
       description:

@@ -1,0 +1,118 @@
+.trainingCardWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 70px;
+  width: 360px;
+  background-color: transparent;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trainingCardTop,
+.trainingCardBottom {
+  width: 100%;
+}
+
+.trainingCardTop {
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  position: relative;
+}
+
+.trainingCardTop img {
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  width: 100%;
+}
+
+.trainingCardTop div > h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: 700;
+  z-index: 1000;
+  text-align: center;
+  color: #fff;
+}
+
+.trainingCardBottom {
+  background-color: #fedd07;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  padding: 0 32px 48px 32px;
+  position: relative;
+}
+
+.trainingCardBottom::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, #fedd07 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.trainingCardBottomPrice p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #fff;
+}
+
+.trainingCardBottomPrice span {
+  font-size: 48px;
+  line-height: 75.5px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.trainingCardBottomDescription p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  margin-left: 18px;
+  text-align: left;
+}
+
+.trainingCardBottomStages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trainingCardBottomStages div {
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.trainingCardBottomStages p {
+  margin-left: 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+}
+
+.trainingCardBottomButton {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.trainingCardBottomButton Button {
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.trainingCardBottomButton Button:hover {
+  background-color: #e55d00;
+}

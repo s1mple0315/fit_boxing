@@ -1,9 +1,9 @@
-// src/components/Card.jsx
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
+import Button from "../Button/Button";
 
 const Card = ({ title, description, url, slug }) => {
-  const iconUrl = `/assets/icons/${slug}-icon.svg`; // Construct the URL based on the slug
+  const iconUrl = `/assets/icons/${slug}-icon.svg`; 
 
   return (
     <div className={styles.card}>
@@ -11,7 +11,7 @@ const Card = ({ title, description, url, slug }) => {
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <Link to={url}>
-        <button className={styles.button}>Подробнее</button>
+        <Button variant='primary' >Подробнее</Button>
       </Link>
     </div>
   );

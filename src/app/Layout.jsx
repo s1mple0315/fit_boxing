@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     <div className={styles.layout}>
       <Header />
       {!isHomePage && <Breadcrumb pageData={pageData}/>}
-      <main className="container">{children}</main>
+      <main >{children}</main>
       <Footer />
     </div>
   );

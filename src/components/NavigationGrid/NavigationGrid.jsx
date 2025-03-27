@@ -4,9 +4,9 @@ import styles from './NavigationGrid.module.css';
 
 const NavigationGrid = () => {
   return (
-    <div className={styles.grid}>
+    <div className={`${styles.grid}`}>
       <h1 className={styles.heading}>Услуги нашего фитнеса</h1>
-      <div className={styles.cardContainer}>
+      <div className={`${styles.cardContainer} container`}>
         {pageData
           .map((page) => (
             <Card

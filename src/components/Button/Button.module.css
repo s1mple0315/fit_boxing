@@ -28,11 +28,6 @@
 
 .arrow {
   margin-left: 8px;
-  font-size: 18px;
-}
-
-.btn:hover:not(:disabled) {
-  opacity: 0.85;
 }
 
 .btn:disabled {

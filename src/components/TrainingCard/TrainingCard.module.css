@@ -36,12 +36,32 @@
   color: #fff;
 }
 
-.trainingCardBottom {
+.trainingCardBottom:hover {
   background-color: #fedd07;
   border-bottom-right-radius: 70px;
   border-bottom-left-radius: 70px;
   padding: 0 32px 48px 32px;
   position: relative;
+  transition: background-color 0.3s ease-in;
+}
+
+.trainingCardBottom {
+  background-color: #000;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  padding: 0 32px 48px 32px;
+  position: relative;
+}
+
+.trainingCardBottom:hover::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, #fedd07 0%, rgba(255, 255, 255, 0) 100%);
+  transition: linear-gradient 0.3s ease-in;
 }
 
 .trainingCardBottom::before {
@@ -51,7 +71,7 @@
   left: 0;
   right: 0;
   height: 100px;
-  background: linear-gradient(to top, #fedd07 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to top, #000 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .trainingCardBottomPrice p {
@@ -59,6 +79,7 @@
   font-weight: 400;
   line-height: 120%;
   color: #fff;
+  text-align: center;
 }
 
 .trainingCardBottomPrice span {
@@ -68,12 +89,17 @@
   color: #fff;
 }
 
-.trainingCardBottomDescription p {
+.trainingCardBottom:hover .trainingCardBottomDescription p {
   font-size: 16px;
   font-weight: normal;
   color: #000;
   margin-left: 18px;
   text-align: left;
+  transition: color 0.3s ease-in;
+}
+
+.trainingCardBottomDescription p {
+  color: #fff;
 }
 
 .trainingCardBottomStages {
@@ -90,12 +116,29 @@
   align-items: center;
 }
 
-.trainingCardBottomStages p {
+.trainingCardBottom:hover .trainingCardBottomStages p {
   margin-left: 12px;
   margin-bottom: 0;
   font-size: 16px;
   font-weight: normal;
   color: #000;
+  transition: color 0.3s ease-in;
+}
+
+.trainingCardBottom:hover .trainingCardBottomStages > div > svg > path{
+    fill: #000 !important;
+} 
+
+.trainingCardBottomStages p {
+  margin-left: 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.trainingCardBottomStages div > svg > path{
+    fill: #fedd07 !important;
 }
 
 .trainingCardBottomButton {
@@ -109,10 +152,10 @@
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  border: none;
+  border:  1px solid #fff;
   cursor: pointer;
 }
 
-.trainingCardBottomButton Button:hover {
-  background-color: #e55d00;
+.trainingCardBottom:hover .trainingCardBottomButton button{
+    border: none;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Button.module.css"; // Import CSS Module
+import styles from "./Button.module.css";
 import Arrow from "../../shared/icons/Arrow";
 
 const Button = ({

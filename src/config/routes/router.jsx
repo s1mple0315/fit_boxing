@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "../../pages/HomePage/HomePage";
 import Layout from "../../app/Layout";
-import GenericPage from "../../pages/GenericPage/GenericPage";
-import pageData from "../../data/pages";
+import PageResolver from "../../pages/PageResolver";
 
 const AppRouter = () => {
   return (
@@ -11,11 +10,12 @@ const AppRouter = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
 
-            <Route
-              path={`/:slug`}
-              element={<GenericPage pageData={pageData} />}
-              caseSensitive={false}
-            />
+          <Route
+            path={`/:slug`}
+            element={<PageResolver />}
+            caseSensitive={false}
+          />
+          
         </Routes>
       </Layout>
     </Router>

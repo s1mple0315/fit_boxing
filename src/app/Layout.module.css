@@ -1,0 +1,14 @@
+.mapContainer {
+  color: #fff;
+}
+
+.mapContainer > h3 {
+  font-size: 61px;
+  margin-bottom: 66px !important;
+}
+
+.mapContainer > iframe {
+  border-radius: 40px;
+  width: 80%;
+  height: 767px;
+}

@@ -1,7 +1,7 @@
 import styles from './Stages.module.css';
 
 const Stages = ({ stages }) => (
-  <section className={styles.stages}>
+  <section className={`${styles.stages} `}>
     <h2 className={styles.sectionTitle}>Этапы тренировки</h2>
     <div className={styles.stagesContainer}>
       {stages.map((stage, index) => (

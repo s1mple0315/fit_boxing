@@ -1,0 +1,19 @@
+.breadcrumb {
+  color: #fff;
+  padding: 45px 100px;
+}
+
+.breadcrumb > ul {
+  list-style: none;
+  padding: 0;
+  gap: 4px;
+}
+
+.breadcrumb > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.breadcrumb > ul > li > svg {
+  margin-right: 10px;
+}

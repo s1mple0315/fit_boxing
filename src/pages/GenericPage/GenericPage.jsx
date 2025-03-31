@@ -1,6 +1,7 @@
 // src/pages/GenericPage/GenericPage.jsx
-import Stage from '../../components/Stages/Stages';
-import styles from './GenericPage.module.css';
+import BorderedCard from "../../components/BorderedCard/BorderedCard";
+import Stage from "../../components/Stages/Stages";
+import styles from "./GenericPage.module.css";
 
 const GenericPage = ({ pageData }) => {
   const page = pageData[0];
@@ -14,7 +15,9 @@ const GenericPage = ({ pageData }) => {
       {/* Page-Specific Header Content */}
       <section className={styles.pageHeader}>
         <h1 className={styles.headerTitle}>{page.topDescription.title}</h1>
-        <p className={styles.headerDescription}>{page.topDescription.description}</p>
+        <p className={styles.headerDescription}>
+          {page.topDescription.description}
+        </p>
         {page.button && (
           <a href={page.button.url} className={styles.headerButton}>
             {page.button.text}
@@ -27,17 +30,14 @@ const GenericPage = ({ pageData }) => {
         <section className={styles.featuresSection}>
           <div className={styles.featuresGrid}>
             {page.cards.map((card, index) => (
-              <div key={index} className={styles.featureCard}>
-                <h3 className={styles.featureTitle}>{card.title}</h3>
-                <p className={styles.featureDescription}>{card.description}</p>
-              </div>
+              <BorderedCard key={index} title={card.title} description={card.description} icon={card.icon} />
             ))}
           </div>
         </section>
       ) : page.stages && page.stages.length > 0 ? (
         <section className={styles.stagesSection}>
           <div className={styles.stages}>
-              <Stage stages={page.stages} />
+            <Stage stages={page.stages} />
           </div>
         </section>
       ) : null}

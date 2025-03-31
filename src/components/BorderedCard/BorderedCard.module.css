@@ -1,0 +1,21 @@
+.borderedCard {
+  padding: 52px 50px 42px;
+  border-radius: 80px;
+  border: 3px dashed #fedd07;
+  color: #fff;
+  width: 460px;
+}
+
+.borderedCard > div {
+  gap: 92px;
+  margin-bottom: 57px;
+}
+
+.borderedCard > div > h1 {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.borderedCard > p {
+  font-size: 18px;
+}

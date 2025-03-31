@@ -7,6 +7,7 @@ import styles from "./Layout.module.css";
 import pageData from "../data/pages";
 import groupPages from "../data/groupPages";
 import Map from "../components/Map/Map";
+import MobileApp from "../components/MobileApp/MobileApp";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -24,6 +25,11 @@ const Layout = ({ children }) => {
           <Map />
         </div>
       </section>
+
+      <section>
+        <MobileApp />
+      </section>
+
       <Footer />
     </div>
   );

@@ -1,0 +1,26 @@
+.mobileAppContainer {
+  border-radius: 80px;
+  margin: 0 20px;
+}
+
+.mobileAppImage {
+  width: 365px;
+}
+
+.mobileAppImage > img {
+  width: 100%;
+}
+
+.mobileAppDescriptionContainer {
+  padding: 40px;
+  color: #fff;
+  gap: 20px;
+}
+
+.downloadImages {
+  gap: 20px;
+}
+
+.downloadImages > img {
+  width: 253px;
+}

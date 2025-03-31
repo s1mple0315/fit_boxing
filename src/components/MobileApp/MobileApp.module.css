@@ -1,6 +1,7 @@
 .mobileAppContainer {
   border-radius: 80px;
-  margin: 0 20px;
+  margin: 80px 40px;
+  gap: 80px !important;
 }
 
 .mobileAppImage {
@@ -15,6 +16,19 @@
   padding: 40px;
   color: #fff;
   gap: 20px;
+  width: 40%;
+}
+
+.mobileAppDescription > h3{
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 40px !important;
+}
+
+.mobileAppDescription > p{
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 40px !important;
 }
 
 .downloadImages {

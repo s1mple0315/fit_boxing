@@ -54,7 +54,7 @@ const TrainingHall = ({
             ))}
           </ul>
         )}
-        <Button variant="secondary">Записаться на пробное занятие</Button>
+        <Button variant="primary">Записаться на пробное занятие</Button>
       </div>
     </div>
   );

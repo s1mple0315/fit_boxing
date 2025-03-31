@@ -2,7 +2,7 @@ import styles from "./MobileApp.module.css";
 
 const MobileApp = () => {
   return (
-    <div className={`${styles.mobileAppContaier} d-flex`}>
+    <div className={`${styles.mobileAppContainer} d-flex justify-content-center`}>
       <div className={styles.mobileAppImage}>
         <img
           src="assets/icons/mobileApp/phone.png"

@@ -1,0 +1,98 @@
+.homeTitle {
+  background-image: url("/assets/pages/homeTitle.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.homeTitleContent {
+  padding: 284px 650px 248px 186px;
+}
+
+.homeTitleText {
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.homeTitleText > h1 {
+  font-size: 100px;
+  line-height: 75.5px;
+  font-weight: 700;
+  margin-bottom: 40px !important;
+}
+
+.homeTitleText > p {
+  font-size: 20px;
+}
+
+.homeTitleButtons {
+  gap: 42px;
+}
+
+.progress {
+  margin: 90px 20px;
+  padding: 80px 20px;
+  border-radius: 80px;
+  color: #fff;
+  background-color: #1b1b1b;
+  background-image: url("/assets/pages/pageTop.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.progress > h3 {
+  font-size: 61px;
+  line-height: 75.5px;
+  font-weight: 700;
+  margin-bottom: 20px !important;
+}
+
+.progress > p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.trainingCardsSection > h3 {
+  text-align: center;
+  font-size: 61px;
+  line-height: 75.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 106px !important;
+}
+
+.trainingCards {
+  margin: 100px 20px;
+  padding: 0 186px;
+  display: flex;
+  gap: 37px;
+}
+
+.trainingHalls > h3 {
+  text-align: center;
+  font-size: 61px;
+  line-height: 75.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 106px !important;
+}
+
+.trainingHalls {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px 20px;
+}
+
+.weekdaysSection > h3 {
+  text-align: center;
+  font-size: 61px;
+  line-height: 75.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 106px !important;
+}
+
+.weekdays{
+    gap: 55px;
+    margin-bottom: 55px;
+}

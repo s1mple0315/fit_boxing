@@ -1,0 +1,95 @@
+/* src/components/TrainingHall/TrainingHall.module.css */
+.trainingHall {
+  padding: 66px 202px 67px 157px;
+  border-radius: 80px;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.imageContainer {
+  width: 700px;
+  height: 700px;
+  border-radius: 100px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trainingHallContent {
+  flex: 1;
+  color: #fff;
+}
+
+.trainingHallContent h3 {
+  font-size: 61px;
+  line-height: 75.5px;
+  font-weight: 700;
+  margin-bottom: 111px;
+  text-transform: uppercase;
+}
+
+.trainingHallContent p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 61px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.options {
+  width: 294px;
+  display: flex;
+  gap: 79px;
+  margin-bottom: 50px;
+}
+
+.option {
+  text-align: center;
+}
+
+.option div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option div h3 {
+  font-size: 61px;
+  line-height: 82px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.option div h3 span {
+  color: #fedd07;
+}
+
+.option p {
+  font-size: 27px;
+  font-weight: 400;
+  color: #999;
+  margin: 5px 0 0;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 50px;
+}
+
+.benefits li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.benefits li p {
+  font-size: 27px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+}

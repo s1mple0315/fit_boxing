@@ -7,6 +7,7 @@ const trainingHalls = [
     area: "60 кв.м",
     trainingDirections: "5+",
     image: "",
+    layout: "left",
   },
   {
     title: "Зал бокса",
@@ -15,6 +16,7 @@ const trainingHalls = [
     area: "75 кв.м",
     trainingDirections: "9+",
     image: "",
+    layout: "right",
   },
   {
     title: "Малый зал",
@@ -23,6 +25,7 @@ const trainingHalls = [
     area: "40 кв.м",
     trainingDirections: "6+",
     image: "",
+    layout: "left",
   },
   {
     title: "Хаммам",
@@ -30,6 +33,7 @@ const trainingHalls = [
       "Зона релаксации с подогреваемыми камнями и мягким освещением для восстановления после тренировок.",
     area: "75 кв.м",
     image: "",
+    layout: "right",
   },
 ];
 

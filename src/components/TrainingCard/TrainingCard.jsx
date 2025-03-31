@@ -1,44 +1,32 @@
+// src/components/TrainingCard/TrainingCard.jsx
 import Radio from "../../shared/icons/Radio";
 import Button from "../Button/Button";
 import styles from "./TrainingCard.module.css";
 
-const TrainingCard = () => {
+const TrainingCard = ({ title, description, price, image, cards }) => {
   return (
     <div className={`${styles.trainingCardWrapper} d-flex flex-column`}>
       <div className={`${styles.trainingCardTop} position-relative`}>
-        <img src="assets/pages/child-training.png" alt="" />
+        <img src={image || "assets/pages/default-training.png"} alt={title} />
         <div>
-          <h3>Детские тренировки</h3>
+          <h3>{title}</h3>
         </div>
       </div>
       <div className={styles.trainingCardBottom}>
         <div className={styles.trainingCardBottomPrice}>
           <p>
-            от <span>4000р.</span>/месяц
+            от <span>{price}</span>/месяц
           </p>
         </div>
         <div className={styles.trainingCardBottomDescription}>
-          <p>Занятия в игровой форме на выносливость и координацию</p>
+          <p>{description}</p>
         </div>
         <div className={styles.trainingCardBottomStages}>
-          <div>
-            <Radio /> <p>Детский тренер</p>
-          </div>
-          <div>
-            <Radio /> <p>Изотоническая вода</p>
-          </div>
-          <div>
-            <Radio /> <p>Полотенце, халат</p>
-          </div>
-          <div>
-            <Radio /> <p>Душевые кабинки</p>
-          </div>
-          <div>
-            <Radio /> <p>Раздевалки</p>
-          </div>
-          <div>
-            <Radio /> <p>Быстрые бинты, перчатки</p>
-          </div>
+          {cards.map((card, index) => (
+            <div key={index}>
+              <Radio /> <p>{card.title}</p>
+            </div>
+          ))}
         </div>
         <div className={styles.trainingCardBottomButton}>
           <Button variant="secondary" hasArrow={true}>

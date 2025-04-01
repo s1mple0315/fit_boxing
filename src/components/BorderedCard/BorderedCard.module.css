@@ -21,3 +21,75 @@
   font-size: 18px;
   margin: 0;
 }
+
+@media (max-width: 1440px) {
+  .borderedCard {
+    width: 400px;
+  }
+
+  .borderedCard > div {
+    gap: 70px;
+  }
+
+  .borderedCard > div > h1 {
+    font-size: 24px;
+  }
+
+  .borderedCard > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .borderedCard {
+    padding: 40px 40px 35px;
+    width: 360px;
+  }
+
+  .borderedCard > div {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .borderedCard {
+    padding: 30px 20px 25px;
+    border-radius: 40px;
+    border: 2px dashed #fedd07;
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .borderedCard > div {
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+
+  .borderedCard > div > h1 {
+    font-size: 20px;
+  }
+
+  .borderedCard > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .borderedCard {
+    padding: 20px 15px 20px;
+    border-radius: 20px;
+  }
+
+  .borderedCard > div {
+    gap: 30px;
+    margin-bottom: 15px;
+  }
+
+  .borderedCard > div > h1 {
+    font-size: 18px;
+  }
+
+  .borderedCard > p {
+    font-size: 12px;
+  }
+}

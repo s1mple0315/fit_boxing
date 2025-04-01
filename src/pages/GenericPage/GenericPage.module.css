@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  margin-bottom: 73px;
 }
 
 .pageHeader::before {
@@ -26,6 +27,7 @@
   position: relative;
   z-index: 2;
 }
+
 .headerContent h1 {
   font-size: 96px;
   line-height: 106px;
@@ -43,7 +45,7 @@
 .headerButton {
   z-index: 2;
   position: relative;
-  width: 40%;
+  max-width: 696px;
   text-align: center;
   background-color: #fedd07;
   border-radius: 25px;
@@ -77,4 +79,129 @@
   justify-content: center;
   gap: 87px;
   padding: 40px 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1440px) {
+  .headerContent h1 {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  .headerContent > p {
+    font-size: 22px;
+  }
+
+  .headerButton {
+    max-width: 550px;
+    padding: 34.5px 75.5px;
+  }
+
+  .headerButton > a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .pageHeader {
+    padding: 50px;
+  }
+
+  .featuresGrid {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    padding: 40px 20px;
+    margin: 0 10px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    background-size: cover;
+  }
+
+  .pageHeader::before {
+    border-radius: 40px;
+  }
+
+  .headerContent h1 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 20px !important;
+  }
+
+  .headerContent > p {
+    font-size: 18px;
+  }
+
+  .headerButton {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px !important;
+    border-radius: 15px;
+  }
+
+  .headerButton > img {
+    width: 130px;
+  }
+
+  .headerButton > a {
+    font-size: 20px;
+  }
+
+  .featuresSection {
+    margin: 40px 10px;
+    border-radius: 20px;
+  }
+
+  .featuresGrid {
+    padding: 30px 15px;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .headerButton > img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageHeader {
+    padding: 30px 15px;
+    border-radius: 20px;
+  }
+
+  .pageHeader::before {
+    border-radius: 20px;
+  }
+
+  .headerContent h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .headerContent > p {
+    font-size: 16px;
+  }
+
+  .headerButton {
+    padding: 15px;
+  }
+
+  .headerButton > a {
+    font-size: 18px;
+  }
+
+  .featuresSection {
+    margin: 20px 5px;
+  }
+
+  .featuresGrid {
+    padding: 20px 10px;
+    gap: 30px;
+  }
 }

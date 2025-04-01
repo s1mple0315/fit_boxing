@@ -5,8 +5,9 @@ import Telegram from "../../../shared/icons/Telegram";
 import VK from "../../../shared/icons/VK";
 import pageData from "../../../data/pages";
 import groupPages from "../../../data/groupPages";
-import styles from "./Footer.module.css";
 import breadcrumbPages from "../../../data/breadcrumbPages";
+
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
@@ -108,11 +109,9 @@ const Footer = () => {
       </div>
       <div className={`${styles.footerBottom} d-flex justify-content-between`}>
         <p>2025 FITBOXING</p>
-        <div className="d-flex" style={{gap: "135px"}}>
-          <p>Политика конфиденциальности</p>
-          <p>Договор оферты</p>
-          <p>Положение о защите персональных данных</p>
-        </div>
+        <p>Политика конфиденциальности</p>
+        <p>Договор оферты</p>
+        <p>Положение о защите персональных данных</p>
         <p>Разработка сайта</p>
       </div>
     </div>

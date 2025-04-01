@@ -10,6 +10,9 @@ ul {
 
 .footerTop {
   padding: 80px 120px 55px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .companyInfo > img {
@@ -54,10 +57,14 @@ ul {
 }
 
 .footerBottom {
+  flex-wrap: wrap;
+  justify-content: center !important;
+  gap: 5% 5%;
   border-top: 3px solid #fff;
   padding: 30px 21px 90px;
 }
 
 .footerBottom > p {
   font-size: 18px;
+  margin-bottom: 10px;
 }

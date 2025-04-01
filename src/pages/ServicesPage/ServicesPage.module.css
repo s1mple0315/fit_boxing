@@ -25,7 +25,7 @@
 
 .serviceButton {
   position: relative;
-  width: 40%;
+  max-width: 696px;
   text-align: center;
   background-color: #fedd07;
   border-radius: 25px;
@@ -52,6 +52,124 @@
   background-color: #1b1b1b;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px 123px;
+  justify-content: center;
+  gap: 50px 100px;
   border-radius: 80px;
+}
+
+@media (max-width: 1440px) {
+  .serviceContent > h1 {
+    font-size: 50px;
+  }
+
+  .serviceContent > p {
+    font-size: 22px;
+  }
+
+  .serviceButton{
+    max-width: 550px;
+    padding: 34.5px 75.5px;
+  }
+
+  .serviceButton > a{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .servicesSection{
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 1004px) {
+  .cardsSection {
+    padding: 70px 80px;
+    gap: 35px 80px;
+  }
+}
+
+@media (max-width: 847px) {
+  .cardsSection {
+    padding: 50px 40px;
+    gap: 35px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 40px 20px; /* Reduce padding, center content */
+    margin: 0 10px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    background-size: cover; /* Ensure background fits */
+  }
+
+  .serviceContent > h1 {
+    font-size: 36px; /* Smaller heading */
+    line-height: 45px;
+    margin-bottom: 20px !important;
+  }
+
+  .serviceContent > p {
+    font-size: 18px; /* Smaller text */
+  }
+
+  .serviceButton {
+    width: 100%; /* Full width */
+    padding: 20px; /* Reduce padding */
+    margin-top: 20px !important;
+    border-radius: 15px;
+  }
+
+  .serviceButton > img{
+    width: 130px;
+  }
+
+  .serviceButton > a {
+    font-size: 20px; /* Smaller link text */
+  }
+
+  .cardsSection {
+    margin: 0 10px;
+    padding: 40px 20px; /* Reduce padding */
+    gap: 30px; /* Single gap value for stacking */
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .serviceButton > img{
+   display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesSection {
+    padding: 30px 15px;
+    border-radius: 20px;
+  }
+
+  .serviceContent > h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .serviceContent > p {
+    font-size: 16px;
+  }
+
+  .serviceButton {
+    padding: 15px;
+  }
+
+  .serviceButton > a {
+    font-size: 18px;
+  }
+
+  .cardsSection {
+    padding: 20px 10px;
+    gap: 20px;
+    border-radius: 20px;
+  }
 }

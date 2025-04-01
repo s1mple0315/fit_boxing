@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
       {!isHomePage && (
         <Breadcrumb pageData={pageData} groupPages={groupPages} breadcrumbPages={breadcrumbPages}/>
       )}
-      {/* <main>{children}</main> */}
+      <main>{children}</main>
       <section className={`${styles.mapSection} container`}>
         <div className={`${styles.mapContainer} d-flex flex-column align-items-center`}> 
           <h3>Где мы находимся</h3>

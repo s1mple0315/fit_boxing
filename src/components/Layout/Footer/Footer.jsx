@@ -6,6 +6,7 @@ import VK from "../../../shared/icons/VK";
 import pageData from "../../../data/pages";
 import groupPages from "../../../data/groupPages";
 import styles from "./Footer.module.css";
+import breadcrumbPages from "../../../data/breadcrumbPages";
 
 const Footer = () => {
   return (
@@ -88,30 +89,20 @@ const Footer = () => {
             className="d-flex flex-column"
             style={{ gap: "30px", padding: 0, listStyle: "none" }}
           >
-            <li>
-              <Link
-                to={"/"}
-                style={{
-                  color: "#fff",
-                  textDecoration: "none",
-                  fontSize: "18px",
-                }}
-              >
-                Мобильное приложение
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={"/"}
-                style={{
-                  color: "#fff",
-                  textDecoration: "none",
-                  fontSize: "18px",
-                }}
-              >
-                Онлайн-расписание
-              </Link>
-            </li>
+            {breadcrumbPages.map((page) => (
+              <li key={page.slug}>
+                <Link
+                  to={`/${page.slug}`}
+                  style={{
+                    color: "#fff",
+                    textDecoration: "none",
+                    fontSize: "18px",
+                  }}
+                >
+                  {page.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

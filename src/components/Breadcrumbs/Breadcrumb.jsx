@@ -3,17 +3,17 @@ import { Link, useLocation } from "react-router-dom";
 import Home from "../../shared/icons/Home";
 
 import styles from "./Breadcrumb.module.css";
+import breadcrumbPages from "../../data/breadcrumbPages";
 
 const Breadcrumb = ({ pageData, groupPages }) => {
   const location = useLocation();
   const slug = location.pathname.split("/")[1] || "";
 
   const currentPage =
-    pageData.find(
-      (page) => page.slug.toLowerCase() === (slug || "").toLowerCase()
-    ) ||
-    groupPages.find(
-      (page) => page.slug.toLowerCase() === (slug || "").toLowerCase()
+    pageData.find((page) => page.slug.toLowerCase() === slug.toLowerCase()) ||
+    groupPages.find((page) => page.slug.toLowerCase() === slug.toLowerCase()) ||
+    breadcrumbPages.find(
+      (page) => page.slug.toLowerCase() === slug.toLowerCase()
     );
 
   return (

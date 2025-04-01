@@ -68,3 +68,19 @@ ul {
   font-size: 18px;
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .footerTop {
+    padding: 60px 90px 35px;
+  }
+
+  .footerBottom > p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  .footerTop {
+    padding: 60px 30px 35px;
+  }
+}

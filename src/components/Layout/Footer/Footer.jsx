@@ -14,7 +14,9 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={`${styles.footerTop} d-flex justify-content-between`}>
         <div className={`${styles.companyInfo} d-flex flex-column`}>
-          <img src="assets/header/appLogo.png" alt="" />
+          <Link to={'/'}>
+            <img src="assets/header/appLogo.png" alt="" />
+          </Link>
           <div className={`${styles.slogan} d-flex flex-column`}>
             <p>Фитнес - как смысл жизни, </p>
             <p>конструируем красивые стройные тела</p>

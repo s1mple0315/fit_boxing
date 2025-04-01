@@ -15,7 +15,7 @@ ul {
   gap: 20px;
 }
 
-.companyInfo > img {
+.companyInfo > a > img {
   width: 268px;
   height: 68px;
   margin-bottom: 40px;

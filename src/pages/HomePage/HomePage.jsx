@@ -6,7 +6,7 @@ import trainingHalls from "../../data/trainingHalls";
 import groupPages from "../../data/groupPages";
 import styles from "./HomePage.module.css";
 import Button from "../../components/Button/Button";
-import NewsSlider from "../../components/Slider/NewsSlider";
+import Slider from "../../components/CustomSlider/Slider";
 
 const HomePage = () => {
   const imageRows = [
@@ -14,6 +14,77 @@ const HomePage = () => {
     ["1.png", "2.png", "3.png"],
     ["1.png", "2.png", "3.png"],
     ["1.png", "2.png", "3.png"],
+  ];
+
+  const news = [
+    [
+      {
+        icon: "fit-word.svg",
+        title: "1е место в FIT-WORD",
+        text: "Мы участвовали в самом знаменитом конкурсе в мире и заняли 1е место.",
+      },
+      {
+        icon: "trophy.svg",
+        title: "Нас уже более 50000+",
+        text: "Количество наших дорогих спортсменов растет с каждым днём.",
+      },
+      {
+        icon: "schedule.svg",
+        title: "Улучшили расписание",
+        text: "Теперь мы работаем и ночью для комфортного распределения графика.",
+      },
+    ],
+    [
+      {
+        icon: "fit-word.svg",
+        title: "Новый тренер в команде",
+        text: "Приветствуем нового тренера по боксу с международным опытом.",
+      },
+      {
+        icon: "trophy.svg",
+        title: "Награды за февраль",
+        text: "Наши спортсмены снова показали выдающиеся результаты!",
+      },
+      {
+        icon: "schedule.svg",
+        title: "Открытая тренировка",
+        text: "Бесплатная тренировка на свежем воздухе в это воскресенье.",
+      },
+    ],
+    [
+      {
+        icon: "fit-word.svg",
+        title: "Новый тренер в команде",
+        text: "Приветствуем нового тренера по боксу с международным опытом.",
+      },
+      {
+        icon: "trophy.svg",
+        title: "Награды за февраль",
+        text: "Наши спортсмены снова показали выдающиеся результаты!",
+      },
+      {
+        icon: "schedule.svg",
+        title: "Открытая тренировка",
+        text: "Бесплатная тренировка на свежем воздухе в это воскресенье.",
+      },
+    ],
+    [
+      {
+        icon: "fit-word.svg",
+        title: "Новый тренер в команде",
+        text: "Приветствуем нового тренера по боксу с международным опытом.",
+      },
+      {
+        icon: "trophy.svg",
+        title: "Награды за февраль",
+        text: "Наши спортсмены снова показали выдающиеся результаты!",
+      },
+      {
+        icon: "schedule.svg",
+        title: "Открытая тренировка",
+        text: "Бесплатная тренировка на свежем воздухе в это воскресенье.",
+      },
+    ],
   ];
 
   return (
@@ -103,7 +174,7 @@ const HomePage = () => {
       </section>
 
       <section>
-        <NewsSlider />
+        <Slider news={news} />
       </section>
     </div>
   );

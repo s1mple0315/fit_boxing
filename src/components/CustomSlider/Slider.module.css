@@ -1,0 +1,101 @@
+/* Slider Container */
+.sliderContainer {
+  position: relative;
+  margin: 0 20px;
+  padding: 40px 20px;
+  border-radius: 80px;
+  background-color: #000000;
+  color: white;
+  overflow: hidden;
+}
+
+.sliderContent {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: #000000;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 100%;
+}
+
+.slideItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 17px;
+  color: #fff;
+  text-align: start;
+}
+
+.text {
+  font-size: 18px;
+  color: #667085;
+  max-width: 300px;
+  text-align: start;
+}
+
+.sliderControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 17px;
+}
+
+.controlButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fedd07;
+  border: none;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.indicator {
+  width: 57.8px;
+  height: 3px;
+  background-color: #bababa;
+  margin: 0 4px;
+  transition: background-color 0.3s;
+}
+
+.active {
+  width: 101px;
+  background-color: #fedd07;
+}
+
+/* Media Queries */
+
+@media (max-width: 1100px) {
+  .slide {
+    flex-direction: column;
+  }
+}

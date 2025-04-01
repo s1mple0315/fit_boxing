@@ -8,6 +8,7 @@ import pageData from "../data/pages";
 import groupPages from "../data/groupPages";
 import Map from "../components/Map/Map";
 import MobileApp from "../components/MobileApp/MobileApp";
+import breadcrumbPages from "../data/breadcrumbPages";
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -16,7 +17,7 @@ const Layout = ({ children }) => {
     <div className={styles.layout}>
       <Header />
       {!isHomePage && (
-        <Breadcrumb pageData={pageData} groupPages={groupPages} />
+        <Breadcrumb pageData={pageData} groupPages={groupPages} breadcrumbPages={breadcrumbPages}/>
       )}
       {/* <main>{children}</main> */}
       <section className={`${styles.mapSection} container`}>

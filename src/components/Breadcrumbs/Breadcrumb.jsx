@@ -3,9 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import Home from "../../shared/icons/Home";
 
 import styles from "./Breadcrumb.module.css";
-import breadcrumbPages from "../../data/breadcrumbPages";
 
-const Breadcrumb = ({ pageData, groupPages }) => {
+const Breadcrumb = ({ pageData, groupPages, breadcrumbPages }) => {
   const location = useLocation();
   const slug = location.pathname.split("/")[1] || "";
 

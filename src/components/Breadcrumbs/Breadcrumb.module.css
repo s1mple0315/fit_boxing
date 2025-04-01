@@ -17,3 +17,19 @@
 .breadcrumb > ul > li > svg {
   margin-right: 10px;
 }
+
+@media (max-width: 860px) {
+  .breadcrumb{
+    padding: 30px 10%;
+  }
+}
+
+@media (max-width: 340px) {
+  .breadcrumb > ul > li > a {
+    font-size: 14px;
+  }
+
+  .breadcrumb > ul > li > span{
+    font-size: 14px;
+  }
+}

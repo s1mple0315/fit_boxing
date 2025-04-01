@@ -83,6 +83,10 @@
   margin: 40px 20px;
 }
 
+.weekdaysSection {
+  margin: 40px 20px;
+}
+
 .weekdaysSection > h3 {
   text-align: center;
   font-size: 61px;
@@ -92,7 +96,24 @@
   margin-bottom: 106px !important;
 }
 
-.weekdays{
-    gap: 55px;
-    margin-bottom: 55px;
+.weekdays {
+  flex-wrap: wrap;
+  gap: 55px;
+  margin-bottom: 55px;
+  justify-content: center; 
+}
+
+@media (max-width: 1070px) {
+  .weekdays {
+    overflow-x: auto; 
+    gap: 25px; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+    flex-wrap: nowrap; 
+  }
+
+  .weekdays img {
+    width: auto; 
+    height: auto;
+  }
 }

@@ -4,9 +4,10 @@ import TrainingCard from "../../components/TrainingCard/TrainingCard";
 import TrainingHall from "../../components/TrainingHall/TrainingHall";
 import trainingHalls from "../../data/trainingHalls";
 import groupPages from "../../data/groupPages";
-import styles from "./HomePage.module.css";
 import Button from "../../components/Button/Button";
 import Slider from "../../components/CustomSlider/Slider";
+
+import styles from "./HomePage.module.css";
 
 const HomePage = () => {
   const imageRows = [
@@ -128,7 +129,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={styles.trainingCardsSection}>
+      {/* <section className={styles.trainingCardsSection}>
         <h3>Выбери свой путь к совершенству</h3>
         <div className={styles.trainingCards}>
           {groupPages.map((page) => (
@@ -142,7 +143,7 @@ const HomePage = () => {
             />
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.trainingHalls}>
         <h3>Просторные залы для спорта</h3>
@@ -161,16 +162,18 @@ const HomePage = () => {
 
       <section className={`${styles.weekdaysSection} d-flex flex-column`}>
         <h3>Наши будни</h3>
-        {imageRows.map((row, rowIndex) => (
-          <div
-            key={rowIndex}
-            className={`${styles.weekdays} d-flex align-items-center justify-content-center`}
-          >
-            {row.map((img, imgIndex) => (
-              <img key={imgIndex} src={`assets/pages/weekdays/${img}`} alt="" />
-            ))}
-          </div>
-        ))}
+
+        <div
+          className={`${styles.weekdays} d-flex align-items-center justify-content-center`}
+        >
+          {imageRows.flat().map((img, imgIndex) => (
+            <img
+              key={imgIndex}
+              src={`assets/pages/weekdays/${img}`}
+              alt={`Image ${imgIndex + 1}`}
+            />
+          ))}
+        </div>
       </section>
 
       <section>

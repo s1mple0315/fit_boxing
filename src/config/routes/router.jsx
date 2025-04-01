@@ -15,7 +15,7 @@ const AppRouter = () => {
             element={<PageResolver />}
             caseSensitive={false}
           />
-          
+
         </Routes>
       </Layout>
     </Router>

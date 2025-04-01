@@ -19,13 +19,13 @@
   width: 40%;
 }
 
-.mobileAppDescription > h3{
+.mobileAppDescription > h3 {
   font-size: 54px;
   font-weight: 700;
   margin-bottom: 40px !important;
 }
 
-.mobileAppDescription > p{
+.mobileAppDescription > p {
   font-size: 27px;
   font-weight: 400;
   margin-bottom: 40px !important;
@@ -37,4 +37,58 @@
 
 .downloadImages > img {
   width: 253px;
+}
+
+@media (max-width: 960px) {
+  .mobileAppContainer {
+    gap: 40px !important;
+  }
+
+  .mobileAppDescription > h3 {
+    font-size: 40px;
+  }
+
+  .mobileAppDescription > p {
+    font-size: 20px;
+  }
+
+  .downloadImages > img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileAppContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobileAppDescriptionContainer {
+    padding: 20px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 440px) {
+  .mobileAppImage {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .mobileAppImage > img {
+    width: 100%;
+  }
+
+  .mobileAppDescription > h3 {
+    font-size: 30px;
+  }
+
+  .mobileAppDescription > p {
+    font-size: 15px;
+  }
+
+  .downloadImages > img {
+    width: 180px;
+  }
 }

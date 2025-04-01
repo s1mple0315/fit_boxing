@@ -1,20 +1,47 @@
-.mobileSchedulePage {
-  padding: 20px;
-}
-
 .scheduleSection {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-
-.scheduleSection h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin: 0 20px;
+  padding: 64px 0 60px 157px;
   color: #fff;
+  border-radius: 78px;
+  margin-bottom: 110px;
+  background-image: url("/assets/pages/pageTop.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.scheduleSection p {
-  font-size: 1.2rem;
-  color: #ccc;
+.scheduleContent > h1 {
+  font-size: 61px;
+  font-weight: 700;
+  margin-bottom: 30px !important;
+  line-height: 75.5px;
+}
+
+.scheduleContent > p {
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 0% !important;
+}
+
+.scheduleButton {
+  position: relative;
+  width: 40%;
+  text-align: center;
+  background-color: #fedd07;
+  border-radius: 25px;
+  padding: 34.5px 125.5px;
+  margin-top: 37px !important;
+}
+
+.scheduleButton > img {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+}
+
+.scheduleButton > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 26px;
 }

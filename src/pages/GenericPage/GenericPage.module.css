@@ -1,4 +1,5 @@
 .pageHeader {
+  gap: 50px;
   color: #fff;
   margin: 0 20px;
   padding: 68px;
@@ -8,29 +9,42 @@
   background-repeat: no-repeat;
 }
 
-.pageHeader h1 {
+.headerContent h1 {
   font-size: 96px;
   line-height: 106px;
   font-weight: 700;
   margin-bottom: 30px !important;
 }
 
-.pageHeader > p {
+.headerContent > p {
   font-size: 27px;
   font-weight: 400;
   line-height: 120%;
-  margin-bottom: 30px !important;
+  margin-bottom: 0 !important;
 }
 
-a.headerButton {
-  font-size: 26px;
-  line-height: 120%;
-  text-decoration: none;
-  color: #000000;
+.headerButton {
+  position: relative;
+  width: 39%;
+  text-align: center;
   background-color: #fedd07;
   border-radius: 25px;
   padding: 34.5px 125.5px;
-  margin-top: 37px;
+  margin-top: 37px !important;
+}
+
+.headerButton > img {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+}
+
+.headerButton > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 26px;
+  line-height: 120%;
 }
 
 .featuresSection {
@@ -39,7 +53,7 @@ a.headerButton {
   border-radius: 30px;
 }
 
-.featuresGrid{
+.featuresGrid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

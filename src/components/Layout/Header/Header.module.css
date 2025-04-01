@@ -1,6 +1,13 @@
 .headerWrapper {
   background-color: #1b1b1b;
   padding: 12px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo img {
+  max-width: 163px; /* Ограничение размера логотипа */
 }
 
 .headerNav {
@@ -14,5 +21,88 @@
   font-size: 21px;
   line-height: 120%;
   font-weight: 500;
-  color: #fff ;
+  color: #fff;
+}
+
+/* Бургер-меню */
+.burgerMenu {
+  display: none;
+  cursor: pointer;
+}
+
+.burgerIcon {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+@media (max-width: 1101px) {
+  .headerNav {
+    gap: 15px;
+  }
+
+  .headerNav button {
+    font-size: 14px;
+  }
+
+  .headerNav > a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .headerNav {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}
+
+.offcanvasMenu {
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.offcanvasOpen {
+  right: 0; 
+}
+
+.offcanvasContent {
+  position: relative;
+  background-color: #1b1b1b; 
+  height: 100%;
+  width: 100%;
+  padding: 12px 28px; 
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+  margin-left: auto; 
+}
+
+.offcanvasContent > .closeButton{
+  background-color: transparent;
+  font-size: 40px;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.offcanvasContent > a {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 120%;
+  font-weight: 500;
+  color: #fff;
 }

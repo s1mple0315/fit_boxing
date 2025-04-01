@@ -1,3 +1,48 @@
-.pageHeader{
-    color: #fff;
+.pageHeader {
+  color: #fff;
+  margin: 0 20px;
+  padding: 68px;
+  border-radius: 80px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pageHeader h1 {
+  font-size: 96px;
+  line-height: 106px;
+  font-weight: 700;
+  margin-bottom: 30px !important;
+}
+
+.pageHeader > p {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 30px !important;
+}
+
+a.headerButton {
+  font-size: 26px;
+  line-height: 120%;
+  text-decoration: none;
+  color: #000000;
+  background-color: #fedd07;
+  border-radius: 25px;
+  padding: 34.5px 125.5px;
+  margin-top: 37px;
+}
+
+.featuresSection {
+  margin: 72px 20px;
+  background-color: #1b1b1b;
+  border-radius: 30px;
+}
+
+.featuresGrid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 87px;
+  padding: 40px 20px;
 }

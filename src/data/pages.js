@@ -3,6 +3,7 @@ const pageData = [
   {
     slug: "fit-boxing",
     title: "Fit Boxing",
+    image: "pageTop",
     description:
       "Тренировка с элементами единоборств и фитнеса, работа с мешками под музыку.",
     topDescription: {
@@ -41,6 +42,7 @@ const pageData = [
   {
     slug: "stretching",
     title: "Cтретчинг",
+    image: "pageTop",
     description: "Упражнения на растяжку для улучшения гибкости и профилактики травм.",
     topDescription: {
       title: "Стретчинг",
@@ -73,6 +75,7 @@ const pageData = [
   {
     slug: "cross-fit",
     title: "Cross Fit",
+    image: "pageTop",
     description:
       "Комплекс упражнений для всего тела, направленный на укрепление мышечного корсета.",
     topDescription: {
@@ -106,6 +109,7 @@ const pageData = [
   {
     slug: "kick-boxing",
     title: "Kick Boxing",
+    image: "pageTop",
     description: "Удары руками и ногами для развития силы и выносливости.",
     topDescription: {
       title: "Kick boxing",
@@ -138,6 +142,7 @@ const pageData = [
   {
     slug: "yoga",
     title: "Йога",
+    image: "pageTop",
     description:
       "Гибкость, сила и внутренний баланс через растяжку и дыхательные практики.",
     topDescription: {
@@ -171,6 +176,7 @@ const pageData = [
   {
     slug: "trx",
     title: "TRX",
+    image: "pageTop",
     description:
       "Тренировка с подвесными тренажерами для укрепления всего тела.",
     topDescription: {
@@ -204,6 +210,7 @@ const pageData = [
   {
     slug: "massage",
     title: "Массаж",
+    image: "pageTop",
     description:
       "Расслабление, восстановление и снятие стресса с помощью различных техник массажа.",
     topDescription: {
@@ -237,6 +244,7 @@ const pageData = [
   {
     slug: "hammam",
     title: "Хаммам",
+    image: "pageTop",
     description:
       "Зона релаксации с мягким освещением для восстановления после тренировок.",
     topDescription: {

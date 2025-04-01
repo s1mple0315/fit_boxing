@@ -5,7 +5,7 @@ const groupPages = [
     title: "Групповые тренировки",
     description: "Занятия в группе до 8 человек в небольших залах",
     price: "5000р",
-    image: "",
+    image: "group-training",
     topDescription: {
       title: "Групповые тренировки",
       description:
@@ -58,7 +58,7 @@ const groupPages = [
     title: "Детские тренировки",
     description: "Занятия в игровой форме на выносливость и координацию",
     price: "5000р",
-    image: "",
+    image: "child-training",
     topDescription: {
       title: "Детские тренировки",
       description:
@@ -112,7 +112,7 @@ const groupPages = [
     title: "Индивидуальные тренировки",
     description: "Индивидуальные тренировки для достижения личных целей.",
     price: "9000р",
-    image: "",
+    image: "individual-training",
     topDescription: {
       title: "Индивидуальные тренировки",
       description:
@@ -166,7 +166,7 @@ const groupPages = [
     title: "Сплит тренировки",
     description: "Дуо тренировки в парах.",
     price: "7000р",
-    image: "",
+    image: "split-training",
     topDescription: {
       title: "Сплит тренировки",
       description:

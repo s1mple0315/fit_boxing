@@ -1,5 +1,5 @@
 .borderedCard {
-  padding: 52px 50px 42px;
+  padding: 50px 50px 42px;
   border-radius: 80px;
   border: 3px dashed #fedd07;
   color: #fff;
@@ -8,14 +8,16 @@
 
 .borderedCard > div {
   gap: 92px;
-  margin-bottom: 57px;
+  margin-bottom: 32px;
 }
 
 .borderedCard > div > h1 {
   font-size: 27px;
   font-weight: 700;
+  margin: 0%;
 }
 
 .borderedCard > p {
   font-size: 18px;
+  margin: 0;
 }

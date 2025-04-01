@@ -1,16 +1,24 @@
 import styles from "./PageTopDescription.module.css";
 
-const PageTopDescription = ({title, description}) => {
+const PageTopDescription = ({
+  children,
+  backgroundClass,
+  backgroundImage,
+  layout
+}) => {
+  const layoutClass = layout === 'reverse' ? styles.reverseLayout : styles.defaultLayout;
+
   return (
-    <div className={`${styles.pageTopDescription} align-items-center justify-content-center`}>
-      <div className="container align-items-center justify-content-between">
-        <h1>{title}</h1>
-        <p>
-          {description}
-        </p>
+    <div
+      className={`${styles.pageTopDescription} ${backgroundClass} ${layoutClass} d-flex align-items-center justify-content-center`}
+      style={{ backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none' }}
+    >
+      <div className="container d-flex align-items-center justify-content-between">
+        {children}
       </div>
     </div>
   );
 };
+
 
 export default PageTopDescription;

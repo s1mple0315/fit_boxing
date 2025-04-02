@@ -1,0 +1,132 @@
+.accordion {
+  padding: 60px 186px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.accordionItem {
+  width: 100%;
+  border: 1px solid #fedd07;
+  border-radius: 80px;
+  padding: 20px 28px 20px 48px;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordionTitle {
+  font-size: 27px;
+  color: #fff;
+}
+
+.accordionIcon {
+  padding: 22px 31px;
+  border: 3px solid #71717133;
+  border-radius: 25px;
+}
+
+.accordionContent {
+  color: #6f6f6f;
+  margin: 27px 0;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    padding: 40px 20px;
+  }
+
+  .accordionItem {
+    padding: 15px 20px 15px 30px;
+    border-radius: 80px;
+  }
+
+  .accordionTitle {
+    font-size: 20px;
+  }
+
+  .accordionIcon {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .accordionContent {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1120px) and (min-width: 768px) {
+  .accordion {
+    padding: 50px 100px;
+  }
+
+  .accordionItem {
+    padding: 18px 24px 18px 40px;
+  }
+
+  .accordionTitle {
+    font-size: 24px;
+  }
+
+  .accordionIcon {
+    padding: 20px 25px;
+    border-radius: 25px;
+  }
+
+  .accordionContent {
+    font-size: 16px;
+  }
+}
+
+/* Large screens (1120px - 1770px) */
+@media (max-width: 1770px) and (min-width: 1120px) {
+  .accordion {
+    padding: 60px 120px;
+  }
+
+  .accordionItem {
+    padding: 20px 28px 20px 48px;
+  }
+
+  .accordionTitle {
+    font-size: 26px;
+  }
+
+  .accordionIcon {
+    padding: 22px 30px;
+    border-radius: 25px;
+  }
+
+  .accordionContent {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1770px) {
+  .accordion {
+    padding: 60px 186px;
+  }
+
+  .accordionItem {
+    padding: 20px 28px 20px 48px;
+  }
+
+  .accordionTitle {
+    font-size: 27px;
+  }
+
+  .accordionIcon {
+    padding: 22px 31px;
+    border-radius: 25px;
+  }
+
+  .accordionContent {
+    font-size: 18px;
+  }
+}

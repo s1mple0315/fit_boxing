@@ -103,7 +103,47 @@
   justify-content: center;
 }
 
+@media (max-width: 1700px) {
+  .homeTitleContent {
+    padding: 239px 535px 207px 150px;
+  }
+
+  .homeTitleText > h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .homeTitleContent {
+    padding: 170px 350px 170px 120px;
+  }
+
+  .homeTitleText > h1 {
+    font-size: 60px;
+  }
+}
+
 @media (max-width: 1070px) {
+  .homeTitleButtons > button {
+    font-size: 18px;
+  }
+
+  .homeTitleContent {
+    padding: 100px 250px 130px 100px;
+  }
+
+  .homeTitleText {
+    margin-bottom: 60px;
+  }
+
+  .homeTitleText > h1 {
+    font-size: 40px;
+  }
+
+  .homeTitleText > p {
+    font-size: 16px;
+  }
+
   .weekdays {
     overflow-x: auto;
     gap: 25px;
@@ -117,7 +157,6 @@
     height: auto;
   }
 
-  /* Add responsiveness for progress section */
   .progress {
     padding: 60px 20px;
   }
@@ -148,6 +187,25 @@
 }
 
 @media (max-width: 768px) {
+  .homeTitleText > h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .homeTitleText > p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .homeTitleButtons {
+    flex-direction: column;
+  }
+
+  .homeTitleContent {
+    padding: 40px 70px 70px 60px;
+  }
+
   .progress {
     padding: 40px 20px;
     margin: 0 10px;
@@ -181,6 +239,16 @@
 }
 
 @media (max-width: 480px) {
+  .homeTitle{
+    background-position: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .homeTitleContent{
+    padding: 40px 20px;
+  }
+
   .progress {
     padding: 20px 10px;
     border-radius: 15px;

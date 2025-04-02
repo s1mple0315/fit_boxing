@@ -154,7 +154,7 @@ const HomePage = () => {
             description={hall.description}
             area={hall.area}
             trainingDirections={hall.trainingDirections}
-            image={hall.image}
+            image={`assets/pages/halls/${hall.image}.png`}
             layout={hall.layout}
           />
         ))}

@@ -6,7 +6,7 @@ const trainingHalls = [
       "Панорамные зеркала, качественное освещение, специализированные тренажеры, стоячие груши.",
     area: "60 кв.м",
     trainingDirections: "5",
-    image: "",
+    image: "kickboxing",
     layout: "left",
   },
   {
@@ -15,7 +15,7 @@ const trainingHalls = [
       "Панорамные зеркала, регулировка света, быстрые бинты, лапы для ударов, подвесные груши.",
     area: "75 кв.м",
     trainingDirections: "9",
-    image: "",
+    image: "boxing",
     layout: "right",
   },
   {
@@ -24,7 +24,7 @@ const trainingHalls = [
       "Зал оборудован для занятий йогой, trx, cross-fit и стретчингом",
     area: "40 кв.м",
     trainingDirections: "6",
-    image: "",
+    image: "small",
     layout: "left",
   },
   {
@@ -32,7 +32,7 @@ const trainingHalls = [
     description:
       "Зона релаксации с подогреваемыми камнями и мягким освещением для восстановления после тренировок.",
     area: "75 кв.м",
-    image: "",
+    image: "hammam",
     layout: "right",
   },
 ];

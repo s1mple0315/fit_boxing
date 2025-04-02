@@ -19,7 +19,7 @@ const TrainingHall = ({
       style={{ flexDirection: layout === "left" ? "row" : "row-reverse" }}
     >
       <div className={styles.imageContainer}>
-        <img src={image || "assets/pages/default-training.png"} alt={title} />
+        <img src={image} alt={title} />
       </div>
       <div className={`${styles.trainingHallContent} d-flex flex-column`}>
         <h3>{title}</h3>

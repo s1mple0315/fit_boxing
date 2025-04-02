@@ -175,8 +175,24 @@ const HomePage = () => {
         </div>
       </section>
 
+      <section className={styles.customTrainingHalls}>
+        <h3>Один шаг к твоей идеальной форме</h3>
+        <div className={styles.customTrainingHallsContainer}>
+          <TrainingHall />
+          <TrainingHall />
+          <TrainingHall />
+        </div>
+      </section>
+
       <section>
         <Slider news={news} />
+      </section>
+
+      <section className={styles.subscribeSection}>
+        <h3>Хватит откладывать на завтра то, чем хотел заняться еще вчера</h3>
+        <p>Более 50 опытных тренеров ждут вас ежедневно для конструирования
+        вашего идеального тела, начните действовать прямо сейчас</p>
+        <Button variant="primary">Записаться</Button>
       </section>
     </div>
   );

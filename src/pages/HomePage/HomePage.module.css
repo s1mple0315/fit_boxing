@@ -165,6 +165,12 @@
     font-size: 50px;
   }
 
+  .trainingHalls > h3 {
+    font-size: 50px;
+  }
+
+  .homeTitleContent 
+
   .progress > p {
     font-size: 22px;
   }
@@ -177,6 +183,11 @@
 
   .progress > h3 {
     text-align: center;
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .trainingHalls > h3 {
     font-size: 45px;
   }
 
@@ -217,6 +228,10 @@
     margin-bottom: 20px !important;
   }
 
+  .trainingHalls > h3 {
+    font-size: 36px;
+  }
+
   .progress > p {
     font-size: 18px;
   }
@@ -233,19 +248,24 @@
     margin-bottom: 20px;
   }
 
+  .trainingHalls > h3 {
+    font-size: 24px;
+  }
+
   .progress > p {
     font-size: 16px;
+    line-height: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .homeTitle{
+  .homeTitle {
     background-position: start;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  .homeTitleContent{
+  .homeTitleContent {
     padding: 40px 20px;
   }
 
@@ -255,6 +275,10 @@
   }
 
   .progress > h3 {
+    font-size: 20px;
+  }
+
+  .trainingHalls > h3 {
     font-size: 20px;
   }
 

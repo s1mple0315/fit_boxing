@@ -137,6 +137,195 @@
   padding: 22px 246px;
 }
 
+.customTrainingHalls{
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.customTrainingHall {
+  padding: 66px 202px 67px 157px;
+  border-radius: 80px;
+  gap: 144px;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.imageContainer {
+  width: 700px;
+  height: 700px;
+  border-radius: 100px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customTrainingHallContent {
+  /* padding: 70px 0; */
+  flex: 1;
+  color: #fff;
+}
+
+.customTrainingHallContent h3 {
+  font-size: 61px;
+  line-height: 75.5px;
+  font-weight: 700;
+  margin-bottom: 36px !important;
+  text-transform: uppercase;
+}
+
+.customTrainingHallContent p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 80px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.benefitsContainer{
+  flex: 1;
+}
+
+.benefitsContainer > h3{
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 75.5px;
+  margin-bottom: 50px !important;
+}
+
+.benefits{
+  display: flex;
+  gap: 34px;
+}
+
+.benefitsContent{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefitsContent > h3{
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.benefitsContent > p{
+  font-size: 18px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  gap: 79px;
+  margin-bottom: 50px;
+}
+
+.option {
+  text-align: center;
+}
+
+.option div {
+  display: flex;
+  align-items: center;
+}
+
+.option div > svg {
+  margin-right: 5px;
+}
+
+.option div h3 {
+  font-size: 61px;
+  line-height: 82px;
+  font-weight: 700;
+  margin-bottom: 0 !important;
+}
+
+.option div h3 span {
+  color: #fedd07;
+}
+
+.option p {
+  text-align: start;
+  font-size: 27px;
+  font-weight: 400;
+  color: #999;
+  margin: 5px 0 0;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 50px;
+}
+
+.benefits li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.benefits li p {
+  font-size: 27px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+}
+
+.customOption > div > svg {
+  margin-right: 5px;
+}
+
+.customOptions {
+  gap: 80px;
+}
+
+.customOption > div > h3 {
+  font-size: 61px;
+  line-height: 82px;
+  font-weight: 700;
+  margin-bottom: 0 !important;
+}
+
+.customOption > div > h3 > span {
+  color: #fedd07 !important;
+}
+
+.customOption > div > p {
+  text-align: start;
+  font-size: 27px;
+  font-weight: 400;
+  color: #999;
+  margin: 5px 0 0;
+}
+
+
+@media (max-width: 1770px) {
+  .option div h3 {
+    font-size: 40px;
+  }
+
+  .customOption div h3 {
+    font-size: 40px;
+  }
+
+  .option div > svg {
+    flex-shrink: 0;
+  }
+
+  .customOption div > svg {
+    flex-shrink: 0;
+  }
+
+  .customTrainingHall {
+    gap: 100px;
+  }
+}
+
 @media (max-width: 1700px) {
   .homeTitleContent {
     padding: 239px 535px 207px 150px;
@@ -167,6 +356,58 @@
   .subscribeSection > button {
     font-size: 22px;
     padding: 20px 180px;
+  }
+
+  .benefitsContent > h3 {
+    font-size: 24px;
+  }
+
+  .benefitsContent > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1591px) {
+  .customTrainingHall {
+    padding: 63px 80px 67px 80px;
+    gap: 60px;
+  }
+
+  .imageContainer {
+    width: 600px;
+    height: 600px;
+  }
+
+  .option div h3 {
+    font-size: 34px;
+  }
+
+  .option p {
+    font-size: 20px;
+  }
+
+  .customOption div h3 {
+    font-size: 34px;
+  }
+
+  .customOption p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .customTrainingHallContent {
+    padding: 30px 0;
+  }
+
+  .customTrainingHallContent h3 {
+    font-size: 50px;
+    margin-bottom: 90px;
+  }
+
+  .customTrainingHallContent p {
+    font-size: 18px;
+    margin-bottom: 40px;
   }
 }
 
@@ -200,6 +441,39 @@
   .subscribeSection > button {
     font-size: 20px;
     padding: 18px 150px;
+  }
+
+  .customTrainingHall {
+    gap: 20px;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .imageContainer img {
+    border-radius: 100px;
+  }
+
+  .customTrainingHallContent > h3 {
+    text-align: center;
+  }
+
+  .customTrainingHallContent p {
+    text-align: center;
+  }
+
+  .options {
+    justify-content: space-around;
+  }
+  
+  .customOptions {
+    justify-content: space-around;
+  }
+
+  .benefitsContainer > h3 {
+    font-size: 45px;
+    text-align: center;
   }
 }
 
@@ -399,6 +673,38 @@
     font-size: 18px;
     padding: 15px 100px;
   }
+
+  .customTrainingHall {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 500px;
+  }
+
+  .customTrainingHallContent > h3 {
+    font-size: 36px;
+    line-height: 30px;
+  }
+
+  .customTrainingHallContent p {
+    text-align: center;
+  }
+
+  .customTrainingHallContent > button {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    width: 60%;
+  }
+
+  .benefitsContainer > h3 {
+    font-size: 36px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -460,6 +766,51 @@
   .subscribeSection > button {
     font-size: 16px;
     padding: 12px 80px;
+  }
+
+  .customTrainingHall {
+    padding: 30px 15px;
+  }
+
+  .customTrainingHallContent h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .customTrainingHallContent p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .options {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .customOptions {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .option div h3 {
+    font-size: 30px;
+  }
+
+  .option p {
+    font-size: 16px;
+  
+  }
+  .customOption div h3 {
+    font-size: 30px;
+  }
+
+  .customOption p {
+    font-size: 16px;
+  }
+
+  .checkIconContainer > svg{
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -530,5 +881,63 @@
   .subscribeSection > button {
     font-size: 14px;
     padding: 10px 60px;
+  }
+
+  .customTrainingHall {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .imageContainer {
+    height: 400px;
+  }
+
+  .customTrainingHallContent h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .customTrainingHallContent p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .options {
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customOptions {
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .option div h3 {
+    font-size: 24px;
+  }
+
+  .option p {
+    font-size: 14px;
+  }
+
+  .customOption div h3 {
+    font-size: 24px;
+  }
+
+  .customOption p {
+    font-size: 14px;
+  }
+
+  .customTrainingHallContent > button {
+    width: 80%;
+  }
+
+  .benefits{
+    flex-direction: column;
   }
 }

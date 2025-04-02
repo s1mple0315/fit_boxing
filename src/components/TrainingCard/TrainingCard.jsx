@@ -1,4 +1,3 @@
-// src/components/TrainingCard/TrainingCard.jsx
 import Radio from "../../shared/icons/Radio";
 import Button from "../Button/Button";
 import styles from "./TrainingCard.module.css";
@@ -7,7 +6,7 @@ const TrainingCard = ({ title, description, price, image, cards }) => {
   return (
     <div className={`${styles.trainingCardWrapper} d-flex flex-column`}>
       <div className={`${styles.trainingCardTop} position-relative`}>
-        <img src={image || "assets/pages/default-training.png"} alt={title} />
+        <img src={`assets/pages/training/${image}.png`} alt={title} />
         <div>
           <h3>{title}</h3>
         </div>
@@ -15,7 +14,8 @@ const TrainingCard = ({ title, description, price, image, cards }) => {
       <div className={styles.trainingCardBottom}>
         <div className={styles.trainingCardBottomPrice}>
           <p>
-            от <span>{price}</span>/месяц
+            от <span className={styles.price}>{price}</span>
+            <span className={styles.month}>/месяц</span>
           </p>
         </div>
         <div className={styles.trainingCardBottomDescription}>

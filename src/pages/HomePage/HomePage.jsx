@@ -1,4 +1,3 @@
-// src/pages/HomePage/HomePage.jsx
 import NavigationGrid from "../../components/NavigationGrid/NavigationGrid";
 import TrainingCard from "../../components/TrainingCard/TrainingCard";
 import TrainingHall from "../../components/TrainingHall/TrainingHall";
@@ -129,7 +128,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <section className={styles.trainingCardsSection}>
+      <section className={styles.trainingCardsSection}>
         <h3>Выбери свой путь к совершенству</h3>
         <div className={styles.trainingCards}>
           {groupPages.map((page) => (
@@ -143,7 +142,7 @@ const HomePage = () => {
             />
           ))}
         </div>
-      </section> */}
+      </section>
 
       <section className={styles.trainingHalls}>
         <h3>Просторные залы для спорта</h3>

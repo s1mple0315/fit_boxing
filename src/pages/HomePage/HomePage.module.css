@@ -61,10 +61,12 @@
 }
 
 .trainingCards {
-  margin: 100px 20px;
+  margin: 100px 0;
   padding: 0 186px;
   display: flex;
   gap: 37px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .trainingHalls > h3 {
@@ -111,6 +113,11 @@
   .homeTitleText > h1 {
     font-size: 80px;
   }
+
+  .trainingCards {
+    padding: 0 150px;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -120,6 +127,11 @@
 
   .homeTitleText > h1 {
     font-size: 60px;
+  }
+
+  .trainingCards {
+    padding: 0 120px;
+    gap: 25px;
   }
 }
 
@@ -169,10 +181,18 @@
     font-size: 50px;
   }
 
-  .homeTitleContent 
-
-  .progress > p {
+  .homeTitleContent .progress > p {
     font-size: 22px;
+  }
+
+  .trainingCards {
+    margin: 50px 0;
+    padding: 0 50px;
+    gap: 20px;
+  }
+
+  .trainingCardsSection > h3 {
+    font-size: 50px;
   }
 }
 
@@ -194,6 +214,21 @@
   .progress > p {
     text-align: center;
     font-size: 20px;
+  }
+
+  .trainingCards {
+    padding: 0 30px;
+    gap: 15px;
+  }
+
+  .trainingCardWrapper {
+    width: 100%;
+  }
+
+  .trainingCardsSection > h3 {
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 40px !important;
   }
 }
 
@@ -235,6 +270,28 @@
   .progress > p {
     font-size: 18px;
   }
+
+  .trainingCards {
+    padding: 0 20px;
+    gap: 15px;
+  }
+
+  .trainingCardWrapper {
+    width: 100%;
+  }
+
+  .trainingCardWrapper:hover .trainingCardBottom {
+    background-color: #fedd07;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 0 32px 48px 32px;
+    position: relative;
+  }
+
+  .trainingCardsSection > h3 {
+    font-size: 36px;
+    margin-bottom: 30px !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -255,6 +312,27 @@
   .progress > p {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .trainingCards {
+    padding: 0 10px;
+    gap: 10px;
+  }
+
+  .trainingCardWrapper {
+    width: 100%;
+  }
+
+  .trainingCardWrapper:hover .trainingCardBottom {
+    background-color: #fedd07;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 0 20px 30px 20px;
+    position: relative;
+  }
+
+  .trainingCardsSection > h3 {
+    font-size: 24px;
   }
 }
 
@@ -284,5 +362,26 @@
 
   .progress > p {
     font-size: 14px;
+  }
+
+  .trainingCards {
+    padding: 0 10px;
+    gap: 10px;
+  }
+
+  .trainingCardWrapper {
+    width: 100%;
+  }
+
+  .trainingCardWrapper:hover .trainingCardBottom {
+    background-color: #fedd07;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 0 20px 30px 20px;
+    position: relative;
+  }
+
+  .trainingCardsSection > h3 {
+    font-size: 20px;
   }
 }

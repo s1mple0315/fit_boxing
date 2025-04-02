@@ -5,6 +5,7 @@
   width: 360px;
   background-color: transparent;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .trainingCardTop,
@@ -36,13 +37,26 @@
   color: #fff;
 }
 
-.trainingCardBottom:hover {
+.trainingCardWrapper:hover .trainingCardBottom {
   background-color: #fedd07;
   border-bottom-right-radius: 70px;
   border-bottom-left-radius: 70px;
   padding: 0 32px 48px 32px;
   position: relative;
-  transition: background-color 0.3s ease-in;
+}
+
+.trainingCardWrapper:hover .trainingCardBottom::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, #fedd07 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.trainingCardWrapper:hover .trainingCardBottomPrice p > .month{
+  color: #fff;
 }
 
 .trainingCardBottom {
@@ -53,15 +67,36 @@
   position: relative;
 }
 
-.trainingCardBottom:hover::before {
-  content: "";
-  position: absolute;
-  top: -100px;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(to top, #fedd07 0%, rgba(255, 255, 255, 0) 100%);
-  transition: linear-gradient 0.3s ease-in;
+.trainingCardBottomPrice {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.trainingCardBottomPrice p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  margin-left: 18px;
+  text-align: left;
+}
+
+.trainingCardBottomPrice p > .month {
+  color: #fedd07;
+  font-size: 21px;
+}
+
+.trainingCardBottomPrice p > .price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.trainingCardBottomStages > div{
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 26px;
+  border-top: 1px solid #fff;
 }
 
 .trainingCardBottom::before {
@@ -74,60 +109,33 @@
   background: linear-gradient(to top, #000 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.trainingCardBottomPrice p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 120%;
-  color: #fff;
-  text-align: center;
-}
-
-.trainingCardBottomPrice span {
-  font-size: 48px;
-  line-height: 75.5px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.trainingCardBottom:hover .trainingCardBottomDescription p {
+.trainingCardWrapper:hover .trainingCardBottomDescription p {
   font-size: 16px;
   font-weight: normal;
   color: #000;
   margin-left: 18px;
   text-align: left;
-  transition: color 0.3s ease-in;
+}
+
+.trainingCardBottomDescription{
+  margin-bottom: 36px;
 }
 
 .trainingCardBottomDescription p {
   color: #fff;
 }
 
-.trainingCardBottomStages {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.trainingCardBottomStages div {
-  border-top: 1px solid #fff;
-  padding-top: 10px;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-}
-
-.trainingCardBottom:hover .trainingCardBottomStages p {
+.trainingCardWrapper:hover .trainingCardBottomStages p {
   margin-left: 12px;
   margin-bottom: 0;
   font-size: 16px;
   font-weight: normal;
   color: #000;
-  transition: color 0.3s ease-in;
 }
 
-.trainingCardBottom:hover .trainingCardBottomStages > div > svg > path{
-    fill: #000 !important;
-} 
+.trainingCardWrapper:hover .trainingCardBottomStages > div > svg > path {
+  fill: #000 !important;
+}
 
 .trainingCardBottomStages p {
   margin-left: 12px;
@@ -137,13 +145,18 @@
   color: #fff;
 }
 
-.trainingCardBottomStages div > svg > path{
-    fill: #fedd07 !important;
+.trainingCardBottomStages div > svg > path {
+  fill: #fedd07 !important;
+}
+
+.trainingCardWrapper:hover .trainingCardBottomButton button {
+  border: none;
 }
 
 .trainingCardBottomButton {
-  margin-top: 24px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .trainingCardBottomButton Button {
@@ -152,10 +165,6 @@
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  border:  1px solid #fff;
+  border: 1px solid #fff;
   cursor: pointer;
-}
-
-.trainingCardBottom:hover .trainingCardBottomButton button{
-    border: none;
 }

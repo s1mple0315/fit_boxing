@@ -1,8 +1,7 @@
-/* src/components/TrainingHall/TrainingHall.module.css */
-
 .trainingHall {
   padding: 66px 202px 67px 157px;
   border-radius: 80px;
+  gap: 144px;
   background-color: #1b1b1b;
   color: #fff;
 }
@@ -20,6 +19,7 @@
 }
 
 .trainingHallContent {
+  padding: 70px 0;
   flex: 1;
   color: #fff;
 }
@@ -28,7 +28,7 @@
   font-size: 61px;
   line-height: 75.5px;
   font-weight: 700;
-  margin-bottom: 111px;
+  margin-bottom: 111px !important;
   text-transform: uppercase;
 }
 
@@ -41,7 +41,8 @@
 }
 
 .options {
-  width: 294px;
+  justify-content: space-between;
+  width: 100%;
   display: flex;
   gap: 79px;
   margin-bottom: 50px;
@@ -57,11 +58,15 @@
   justify-content: space-between;
 }
 
+.option div > svg {
+  margin-left: 20px;
+}
+
 .option div h3 {
   font-size: 61px;
   line-height: 82px;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .option div h3 span {
@@ -69,6 +74,7 @@
 }
 
 .option p {
+  text-align: start;
   font-size: 27px;
   font-weight: 400;
   color: #999;
@@ -95,16 +101,43 @@
   margin: 0;
 }
 
-/* Responsive Styles */
+@media (max-width: 1770px) {
+  .option div h3 {
+    font-size: 40px;
+  }
 
-@media (max-width: 1440px) {
+  .option div > svg {
+    flex-shrink: 0;
+  }
+
   .trainingHall {
-    padding: 66px 100px 67px 100px;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 1591px) {
+  .trainingHall {
+    padding: 63px 80px 67px 80px;
+    gap: 60px;
   }
 
   .imageContainer {
     width: 600px;
     height: 600px;
+  }
+
+  .option div h3 {
+    font-size: 34px;
+  }
+
+  .option p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .trainingHallContent {
+    padding: 30px 0;
   }
 
   .trainingHallContent h3 {
@@ -116,54 +149,31 @@
     font-size: 18px;
     margin-bottom: 40px;
   }
-
-  .options {
-    width: 250px;
-    gap: 60px;
-    margin-bottom: 30px;
-  }
-
-  .option div h3 {
-    font-size: 50px;
-  }
-
-  .option p {
-    font-size: 22px;
-  }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1300px) {
   .trainingHall {
-    padding: 50px 60px;
+    gap: 20px;
   }
 
   .imageContainer {
-    width: 500px;
-    height: 500px;
+    width: 100%;
   }
 
-  .trainingHallContent h3 {
-    font-size: 45px;
-    margin-bottom: 70px;
+  .imageContainer img {
+    border-radius: 100px;
+  }
+
+  .trainingHallContent > h3 {
+    text-align: center;
   }
 
   .trainingHallContent p {
-    font-size: 16px;
-    margin-bottom: 30px;
+    text-align: center;
   }
 
   .options {
-    width: 220px;
-    gap: 50px;
-    margin-bottom: 30px;
-  }
-
-  .option div h3 {
-    font-size: 45px;
-  }
-
-  .option p {
-    font-size: 20px;
+    justify-content: space-around;
   }
 }
 
@@ -175,46 +185,25 @@
   }
 
   .imageContainer {
-    width: 400px;
-    height: 400px;
-  }
-
-  .trainingHallContent h3 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    width: 100%;
+    height: 500px;
   }
 
   .trainingHallContent p {
+    text-align: center;
+  }
+
+  .trainingHallContent > button {
+    display: block;
+    margin: 0 auto;
     font-size: 14px;
-    margin-bottom: 20px;
-  }
-
-  .options {
-    width: 100%;
-    gap: 30px;
-    margin-bottom: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .option div h3 {
-    font-size: 36px;
-  }
-
-  .option p {
-    font-size: 18px;
+    width: 60%;
   }
 }
 
 @media (max-width: 576px) {
   .trainingHall {
     padding: 30px 15px;
-    border-radius: 20px;
-  }
-
-  .imageContainer {
-    width: 350px;
-    height: 350px;
   }
 
   .trainingHallContent h3 {
@@ -248,8 +237,7 @@
   }
 
   .imageContainer {
-    width: 300px;
-    height: 300px;
+    height: 400px;
   }
 
   .trainingHallContent h3 {
@@ -275,5 +263,9 @@
 
   .option p {
     font-size: 14px;
+  }
+
+  .trainingHallContent > button {
+    width: 80%;
   }
 }

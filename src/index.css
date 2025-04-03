@@ -6,10 +6,25 @@
 
 body{
     background-color: #000;
+    font-family: "Oswald", sans-serif;
 }
 
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1600px;
     }
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/assets/font/Oswald-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/font/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }

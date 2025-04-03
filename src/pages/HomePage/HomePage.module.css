@@ -78,6 +78,15 @@
   margin-bottom: 106px !important;
 }
 
+.customTrainingHalls > h3 {
+  text-align: center;
+  font-size: 61px;
+  line-height: 75.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 106px !important;
+}
+
 .trainingHalls {
   display: flex;
   flex-direction: column;
@@ -165,7 +174,6 @@
 }
 
 .customTrainingHallContent {
-  /* padding: 70px 0; */
   flex: 1;
   color: #fff;
 }
@@ -348,6 +356,11 @@
     font-size: 50px;
   }
 
+  .customTrainingHalls > h3 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
   .subscribeSection > p {
     font-size: 16px;
     width: 90%;
@@ -433,6 +446,11 @@
     font-size: 45px;
   }
 
+  .customTrainingHalls > h3 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
   .subscribeSection > p {
     font-size: 16px;
     width: 85%;
@@ -449,6 +467,7 @@
 
   .imageContainer {
     width: 100%;
+    border-radius: 80px;
   }
 
   .imageContainer img {
@@ -531,6 +550,10 @@
     margin: 50px 0;
     padding: 0 50px;
     gap: 20px;
+  }
+
+  .imageContainer{
+    border-radius: 70px;
   }
 
   .trainingCardsSection > h3 {
@@ -628,6 +651,15 @@
     font-size: 36px;
   }
 
+  .customTrainingHalls > h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .imageContainer{
+    border-radius: 50px;
+  }
+
   .progress > p {
     font-size: 18px;
   }
@@ -722,6 +754,11 @@
     font-size: 24px;
   }
 
+  .customTrainingHalls > h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
   .progress > p {
     font-size: 16px;
     line-height: 20px;
@@ -751,6 +788,10 @@
   .subscribeSection {
     padding: 40px 15px;
     gap: 15px;
+  }
+
+  .imageContainer {
+    border-radius: 40px;
   }
 
   .subscribeSection > h3 {
@@ -836,6 +877,11 @@
 
   .trainingHalls > h3 {
     font-size: 20px;
+  }
+
+  .customTrainingHalls > h3 {
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .progress > p {

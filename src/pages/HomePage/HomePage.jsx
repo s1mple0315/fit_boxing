@@ -94,7 +94,7 @@ const HomePage = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1300); // Adjust according to the required breakpoint
+      setIsMobile(window.innerWidth < 1300);
     };
 
     window.addEventListener("resize", handleResize);
@@ -105,7 +105,7 @@ const HomePage = () => {
     };
   }, []);
 
-  const flexDirection = isMobile ? "column" : "row"; // Mobile uses column, else row
+  const flexDirection = isMobile ? "column" : "row"; 
 
   return (
     <div className={styles.homePage}>
@@ -126,7 +126,7 @@ const HomePage = () => {
             <Button variant="primary" hasArrow={true}>
               Пробное занятие
             </Button>
-            <Button variant="secondary">Пробное занятие</Button>
+            <Button variant="secondary">Посмотреть тарифы</Button>
           </div>
         </div>
       </section>
@@ -134,7 +134,9 @@ const HomePage = () => {
       <NavigationGrid />
 
       <section className={styles.progressSection}>
-        <div className={`${styles.progress} d-flex flex-column align-items-center`}>
+        <div
+          className={`${styles.progress} d-flex flex-column align-items-center`}
+        >
           <h3>Прогресс не заставит тебя ждать</h3>
           <p>
             Тренируйся с удовольствием и достигай видимых результатов уже через
@@ -179,22 +181,32 @@ const HomePage = () => {
 
       <section className={`${styles.weekdaysSection} d-flex flex-column`}>
         <h3>Наши будни</h3>
-        <div className={`${styles.weekdays} d-flex align-items-center justify-content-center`}>
+        <div
+          className={`${styles.weekdays} d-flex align-items-center justify-content-center`}
+        >
           {imageRows.flat().map((img, imgIndex) => (
-            <img key={imgIndex} src={`assets/pages/weekdays/${img}`} alt={`Image ${imgIndex + 1}`} />
+            <img
+              key={imgIndex}
+              src={`assets/pages/weekdays/${img}`}
+              alt={`Image ${imgIndex + 1}`}
+            />
           ))}
         </div>
       </section>
 
-      {/* Custom Training Halls */}
       <section className={styles.customTrainingHalls}>
         <h3>Просторные залы для спорта</h3>
 
-        <div className={`${styles.customTrainingHall} d-flex justify-content-between`} style={{ flexDirection }}>
+        <div
+          className={`${styles.customTrainingHall} d-flex justify-content-between`}
+          style={{ flexDirection }}
+        >
           <div className={styles.imageContainer}>
             <img src="assets/pages/halls/kickboxing.png" alt="Training Hall" />
           </div>
-          <div className={`${styles.customTrainingHallContent} d-flex flex-column`}>
+          <div
+            className={`${styles.customTrainingHallContent} d-flex flex-column`}
+          >
             <h3>Запишитесь на пробное занятие</h3>
             <p>Прочувствуйте атмосферу роста в нашем премиум фитнес клубе.</p>
 
@@ -210,7 +222,9 @@ const HomePage = () => {
               <div className={`${styles.option} d-flex flex-column`}>
                 <div className="d-flex align-items-center">
                   <Option />
-                  <h3>5<span>+</span></h3>
+                  <h3>
+                    5<span>+</span>
+                  </h3>
                 </div>
                 <p>Направлений занятий</p>
               </div>
@@ -220,31 +234,49 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className={`${styles.customTrainingHall} d-flex justify-content-between`} style={{ flexDirection }}>
+        <div
+          className={`${styles.customTrainingHall} d-flex justify-content-between`}
+          style={{ flexDirection }}
+        >
           <div className={styles.imageContainer}>
             <img src="assets/pages/halls/benefit.png" alt="Training Hall" />
           </div>
           <div className={`${styles.benefitsContainer} d-flex flex-column`}>
             <h3>Почему мы?</h3>
             <div className={styles.benefits}>
-              <div className={styles.checkIconContainer}><Check /></div>
+              <div className={styles.checkIconContainer}>
+                <Check />
+              </div>
               <div className={styles.benefitsContent}>
                 <h3>Семейный фитнес</h3>
-                <p>Помимо тренировки для взрослых у нас есть особые направления занятий для детей и подростков</p>
+                <p>
+                  Помимо тренировки для взрослых у нас есть особые направления
+                  занятий для детей и подростков
+                </p>
               </div>
             </div>
             <div className={styles.benefits}>
-              <div className={styles.checkIconContainer}><Check /></div>
+              <div className={styles.checkIconContainer}>
+                <Check />
+              </div>
               <div className={styles.benefitsContent}>
                 <h3>Без лишних глаз</h3>
-                <p>Специально оборудованные мини -залы позволят заниматься сконцентрированно не отвлекаясь</p>
+                <p>
+                  Специально оборудованные мини -залы позволят заниматься
+                  сконцентрированно не отвлекаясь
+                </p>
               </div>
             </div>
             <div className={styles.benefits}>
-              <div className={styles.checkIconContainer}><Check /></div>
+              <div className={styles.checkIconContainer}>
+                <Check />
+              </div>
               <div className={styles.benefitsContent}>
                 <h3>Индивидуальный подход</h3>
-                <p>Разработаем для вас специальную программу тренировок, поставленную на достижение конкретных целей</p>
+                <p>
+                  Разработаем для вас специальную программу тренировок,
+                  поставленную на достижение конкретных целей
+                </p>
               </div>
             </div>
 
@@ -252,19 +284,33 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className={`${styles.customTrainingHall} d-flex justify-content-between`} style={{ flexDirection }}>
+        <div
+          className={`${styles.customTrainingHall} d-flex justify-content-between`}
+          style={{ flexDirection }}
+        >
           <div className={styles.imageContainer}>
-            <img src="assets/pages/halls/custom3.png" style={{ borderRadius: "100px" }} alt="Training Hall" />
+            <img
+              src="assets/pages/halls/custom3.png"
+              style={{ borderRadius: "100px" }}
+              alt="Training Hall"
+            />
           </div>
-          <div className={`${styles.customTrainingHallContent} d-flex flex-column`}>
+          <div
+            className={`${styles.customTrainingHallContent} d-flex flex-column`}
+          >
             <h3>После нас, другие фитнесы покажутся некомфортными</h3>
-            <p>Полное погружение в процесс тренировки и профессиональные тренера заставят вас влюбиться в это место</p>
+            <p>
+              Полное погружение в процесс тренировки и профессиональные тренера
+              заставят вас влюбиться в это место
+            </p>
 
             <div className={`${styles.customOptions} d-flex`}>
               <div className={`${styles.customOption} d-flex flex-column`}>
                 <div className="d-flex align-items-center">
                   <Option />
-                  <h3>50<span>+</span></h3>
+                  <h3>
+                    50<span>+</span>
+                  </h3>
                 </div>
                 <p>Профессиональных тренеров разной направленности</p>
               </div>
@@ -272,7 +318,9 @@ const HomePage = () => {
               <div className={`${styles.customOption} d-flex flex-column`}>
                 <div className="d-flex align-items-center">
                   <Option />
-                  <h3>5000<span>+</span></h3>
+                  <h3>
+                    5000<span>+</span>
+                  </h3>
                 </div>
                 <p>Часов работы с тренером в месяц</p>
               </div>
@@ -289,7 +337,10 @@ const HomePage = () => {
 
       <section className={styles.subscribeSection}>
         <h3>Хватит откладывать на завтра то, чем хотел заняться еще вчера</h3>
-        <p>Более 50 опытных тренеров ждут вас ежедневно для конструирования вашего идеального тела, начните действовать прямо сейчас</p>
+        <p>
+          Более 50 опытных тренеров ждут вас ежедневно для конструирования
+          вашего идеального тела, начните действовать прямо сейчас
+        </p>
         <Button variant="primary">Записаться</Button>
       </section>
     </div>

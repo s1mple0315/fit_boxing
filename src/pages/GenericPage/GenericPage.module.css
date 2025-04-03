@@ -25,7 +25,7 @@
 
 .headerContent {
   position: relative;
-  padding-left: 100px;
+  /* padding-left: 100px; */
   z-index: 2;
 }
 
@@ -37,6 +37,7 @@
 }
 
 .headerContent > p {
+  font-family: "Inter", sans-serif;
   font-size: 27px;
   font-weight: 400;
   line-height: 120%;
@@ -85,7 +86,7 @@
 /* Responsive Adjustments */
 @media (max-width: 1440px) {
   .headerContent {
-    padding-left: 90px;
+    /* padding-left: 90px; */
   }
 
   .headerContent h1 {
@@ -94,7 +95,7 @@
   }
 
   .headerContent > p {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .headerButton {
@@ -113,7 +114,7 @@
   }
 
   .headerContent{
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
 
   .featuresGrid {
@@ -145,7 +146,7 @@
   }
 
   .headerContent > p {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 
   .headerButton {
@@ -198,7 +199,7 @@
   }
 
   .headerContent > p {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .headerButton {

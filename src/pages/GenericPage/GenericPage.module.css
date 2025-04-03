@@ -25,6 +25,7 @@
 
 .headerContent {
   position: relative;
+  padding-left: 100px;
   z-index: 2;
 }
 
@@ -83,6 +84,10 @@
 
 /* Responsive Adjustments */
 @media (max-width: 1440px) {
+  .headerContent {
+    padding-left: 90px;
+  }
+
   .headerContent h1 {
     font-size: 80px;
     line-height: 90px;
@@ -107,6 +112,10 @@
     padding: 50px;
   }
 
+  .headerContent{
+    padding-left: 50px;
+  }
+
   .featuresGrid {
     gap: 60px;
   }
@@ -125,8 +134,12 @@
     border-radius: 40px;
   }
 
+  .headerContent{
+    padding-left: 10px;
+  }
+
   .headerContent h1 {
-    font-size: 36px;
+    font-size: 75px;
     line-height: 45px;
     margin-bottom: 20px !important;
   }
@@ -180,7 +193,7 @@
   }
 
   .headerContent h1 {
-    font-size: 28px;
+    font-size: 64px;
     line-height: 35px;
   }
 

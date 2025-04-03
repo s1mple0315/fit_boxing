@@ -16,6 +16,7 @@
 }
 
 .stageDescription {
+  font-family: "Inter", sans-serif;
   font-size: 27px;
   font-weight: 400;
   margin-bottom: 40px !important;
@@ -47,42 +48,35 @@
 
 @media (max-width: 768px) {
   .stages {
-    padding: 0 40px;
+    padding: 0 30px;
   }
 
   .sectionTitle {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 40px;
   }
 
   .stageTitle {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 30px !important;
   }
 
   .stageDescription {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 30px !important;
   }
 }
 
 @media (max-width: 480px) {
-  .stages {
-    padding: 0 20px;
-  }
-
   .sectionTitle {
-    font-size: 28px;
     margin-bottom: 30px;
   }
 
   .stageTitle {
-    font-size: 24px;
     margin-bottom: 20px !important;
   }
 
   .stageDescription {
-    font-size: 16px;
     margin-bottom: 20px !important;
   }
 }

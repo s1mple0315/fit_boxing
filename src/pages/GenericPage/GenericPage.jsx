@@ -1,6 +1,5 @@
 import BorderedCard from "../../components/BorderedCard/BorderedCard";
 import Stage from "../../components/Stages/Stages";
-import PageTopDescription from "../../components/PageTopDescription/PageTopDescription"; // Импортируем PageTopDescription
 import styles from "./GenericPage.module.css";
 import { Link } from "react-router-dom";
 

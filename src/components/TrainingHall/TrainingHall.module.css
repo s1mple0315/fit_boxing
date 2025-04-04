@@ -24,7 +24,7 @@
   color: #fff;
 }
 
-.trainingHallContent h3 {
+.trainingHallContent > h3 {
   font-size: 61px;
   line-height: 75.5px;
   font-weight: 700;
@@ -33,7 +33,8 @@
 }
 
 .trainingHallContent p {
-  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 61px;
   line-height: 1.5;
@@ -74,6 +75,7 @@
 }
 
 .option p {
+  font-family: "Inter", sans-serif;
   text-align: start;
   font-size: 27px;
   font-weight: 400;
@@ -95,6 +97,7 @@
 }
 
 .benefits li p {
+  font-family: "Inter", sans-serif;
   font-size: 27px;
   font-weight: 400;
   color: #fff;
@@ -146,7 +149,6 @@
   }
 
   .trainingHallContent p {
-    font-size: 18px;
     margin-bottom: 40px;
   }
 }
@@ -165,6 +167,7 @@
   }
 
   .trainingHallContent > h3 {
+    font-size: 50px;
     text-align: center;
   }
 
@@ -190,12 +193,9 @@
   }
 
   .trainingHallContent > h3 {
-    font-size: 36px;
+    font-size: 42px;
     line-height: 30px;
-  }
-
-  .trainingHallContent p {
-    text-align: center;
+    margin-bottom: 20px !important;
   }
 
   .trainingHallContent > button {
@@ -212,12 +212,11 @@
   }
 
   .trainingHallContent h3 {
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 30px;
   }
 
   .trainingHallContent p {
-    font-size: 14px;
     margin-bottom: 20px;
   }
 
@@ -242,7 +241,7 @@
   }
 
   .imageContainer {
-    height: 400px;
+    height: 333px;
   }
 
   .trainingHallContent h3 {
@@ -251,8 +250,7 @@
     margin-bottom: 20px;
   }
 
-  .trainingHallContent p {
-    font-size: 12px;
+  .trainingHallContent > p {
     margin-bottom: 15px;
   }
 
@@ -273,5 +271,11 @@
 
   .trainingHallContent > button {
     width: 80%;
+  }
+}
+
+@media (max-width: 370px) {
+  .imageContainer {
+    height: 250px;
   }
 }

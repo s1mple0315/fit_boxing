@@ -8,6 +8,15 @@ ul {
   margin-bottom: 0 !important;
 }
 
+.footer p {
+  font-family: "Inter", sans-serif;
+}
+
+.footer a {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
 .footerTop {
   padding: 80px 120px 55px;
   display: flex;
@@ -25,9 +34,26 @@ ul {
   margin-bottom: 21px;
 }
 
+.slogan > p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .address {
   margin-bottom: 30px;
   gap: 7px;
+}
+
+.address > p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.phone {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .companyInfo > h3 {

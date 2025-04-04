@@ -24,7 +24,7 @@ const Footer = () => {
           <div className={`${styles.address} d-flex align-items-center`}>
             <LocationPin /> <p>г. Сочи, пер. Трунова, 6, корп. 2</p>
           </div>
-          <h3>8 (928) 431-37-97</h3>
+          <h3 className={styles.phone}>8 (928) 431-37-97</h3>
           <div className={`${styles.socialIcons} d-flex`}>
             <Telegram />
             <VK />

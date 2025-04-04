@@ -37,10 +37,15 @@
   border-radius: 18px;
 }
 
+.progressSection {
+  margin-bottom: 173px;
+}
+
 .progress {
   margin: 90px 20px;
   padding: 80px 20px;
   border-radius: 80px;
+
   color: #fff;
   background-color: #1b1b1b;
   background-image: url("/assets/pages/pageTop.png");
@@ -72,7 +77,7 @@
 
 .trainingCards {
   margin: 100px 0;
-  padding: 0 186px;
+  padding: 0 100px;
   display: flex;
   gap: 37px;
   flex-wrap: wrap;
@@ -605,7 +610,6 @@
 
   .progress > h3 {
     text-align: center;
-    font-size: 45px;
     line-height: 40px;
   }
 
@@ -628,7 +632,6 @@
   }
 
   .trainingCardsSection > h3 {
-    font-size: 45px;
     line-height: 40px;
     margin-bottom: 40px !important;
   }
@@ -661,7 +664,7 @@
   }
 
   .progress > h3 {
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 20px !important;
   }
 
@@ -700,7 +703,7 @@
   }
 
   .trainingCardsSection > h3 {
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 30px !important;
   }
 
@@ -764,7 +767,7 @@
   }
 
   .progress > h3 {
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 20px;
   }
 
@@ -800,7 +803,7 @@
   }
 
   .trainingCardsSection > h3 {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .subscribeSection {
@@ -886,10 +889,6 @@
   .progress {
     padding: 20px 10px;
     border-radius: 15px;
-  }
-
-  .progress > h3 {
-    font-size: 20px;
   }
 
   .trainingHalls > h3 {

@@ -18,6 +18,7 @@
 }
 
 .scheduleContent > p {
+  font-family: "Inter", sans-serif;
   font-size: 27px;
   font-weight: 400;
   margin-bottom: 0% !important;
@@ -55,60 +56,60 @@
     font-size: 22px;
   }
 
-  .scheduleButton{
+  .scheduleButton {
     max-width: 550px;
     padding: 34.5px 75.5px;
   }
 
-  .scheduleButton > a{
+  .scheduleButton > a {
     font-size: 20px;
   }
 }
 
 @media (max-width: 1120px) {
-  .scheduleSection{
+  .scheduleSection {
     padding: 50px 50px;
   }
 }
 
 @media (max-width: 768px) {
   .servicesSection {
-    padding: 40px 20px; /* Reduce padding, center content */
+    padding: 40px 20px;
     margin: 0 10px;
     border-radius: 40px;
     margin-bottom: 40px;
-    background-size: cover; /* Ensure background fits */
+    background-size: cover; 
   }
 
   .scheduleContent > h1 {
-    font-size: 36px; /* Smaller heading */
+    font-size: 36px; 
     line-height: 45px;
     margin-bottom: 20px !important;
   }
 
   .scheduleContent > p {
-    font-size: 18px; /* Smaller text */
+    font-size: 18px; 
   }
 
   .scheduleButton {
-    width: 100%; /* Full width */
-    padding: 20px; /* Reduce padding */
+    width: 100%; 
+    padding: 20px;
     margin-top: 20px !important;
     border-radius: 15px;
   }
 
-  .scheduleButton > img{
+  .scheduleButton > img {
     width: 130px;
   }
 
   .scheduleButton > a {
-    font-size: 20px; /* Smaller link text */
+    font-size: 20px; 
   }
 }
 
 @media (max-width: 550px) {
-  .scheduleButton > img{
-   display: none;
+  .scheduleButton > img {
+    display: none;
   }
 }
 

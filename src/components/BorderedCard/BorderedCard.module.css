@@ -18,6 +18,7 @@
 }
 
 .borderedCard > p {
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   margin: 0;
 }
@@ -29,14 +30,6 @@
 
   .borderedCard > div {
     gap: 70px;
-  }
-
-  .borderedCard > div > h1 {
-    font-size: 24px;
-  }
-
-  .borderedCard > p {
-    font-size: 16px;
   }
 }
 
@@ -53,8 +46,8 @@
 
 @media (max-width: 768px) {
   .borderedCard {
-    padding: 30px 20px 25px;
-    border-radius: 40px;
+    padding: 30px 40px 25px;
+    border-radius: 60px;
     border: 2px dashed #fedd07;
     width: 100%;
     max-width: 460px;
@@ -64,20 +57,11 @@
     gap: 40px;
     margin-bottom: 20px;
   }
-
-  .borderedCard > div > h1 {
-    font-size: 20px;
-  }
-
-  .borderedCard > p {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 480px) {
   .borderedCard {
-    padding: 20px 15px 20px;
-    border-radius: 20px;
+    padding: 20px 30px 20px;
   }
 
   .borderedCard > div {

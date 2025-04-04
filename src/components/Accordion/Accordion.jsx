@@ -26,7 +26,9 @@ const Accordion = ({ sections }) => {
             </span>
           </div>
           {activeIndex === index && (
-            <div className={styles.accordionContent}>{section.content}</div>
+            <div className={styles.accordionContent}>
+              <p>{section.content}</p>
+            </div>
           )}
         </div>
       ))}

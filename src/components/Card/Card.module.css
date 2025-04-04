@@ -36,10 +36,8 @@
   font-size: 16.13px;
 }
 
-
-
 @media (max-width: 576px) {
-  .card > a > button{
+  .card > a > button {
     display: block;
     width: 50%;
     padding: 10px;

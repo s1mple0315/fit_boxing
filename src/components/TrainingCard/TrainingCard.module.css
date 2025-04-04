@@ -55,7 +55,7 @@
   background: linear-gradient(to top, #fedd07 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.trainingCardWrapper:hover .trainingCardBottomPrice p > .month{
+.trainingCardWrapper:hover .trainingCardBottomPrice p > .month {
   color: #fff;
 }
 
@@ -74,6 +74,7 @@
 }
 
 .trainingCardBottomPrice p {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #fff;
@@ -92,7 +93,7 @@
   color: #fff;
 }
 
-.trainingCardBottomStages > div{
+.trainingCardBottomStages > div {
   display: flex;
   padding-top: 10px;
   padding-bottom: 26px;
@@ -117,11 +118,12 @@
   text-align: left;
 }
 
-.trainingCardBottomDescription{
+.trainingCardBottomDescription {
   margin-bottom: 36px;
 }
 
 .trainingCardBottomDescription p {
+  font-family: "Inter", sans-serif;
   color: #fff;
 }
 
@@ -137,7 +139,8 @@
   fill: #000 !important;
 }
 
-.trainingCardBottomStages p {
+.trainingCardBottomStages > div > p {
+  font-family: "Inter", sans-serif;
   margin-left: 12px;
   margin-bottom: 0;
   font-size: 16px;
@@ -160,6 +163,7 @@
 }
 
 .trainingCardBottomButton Button {
+  font-family: "Inter", sans-serif;
   border-radius: 25px;
   padding: 12px 30px;
   font-size: 18px;

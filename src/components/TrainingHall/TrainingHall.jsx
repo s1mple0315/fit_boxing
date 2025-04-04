@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import styles from "./TrainingHall.module.css";
 
 const TrainingHall = ({
+  onClick,
   title,
   description,
   area,
@@ -87,7 +88,7 @@ const TrainingHall = ({
           </ul>
         )}
 
-        <Button variant="primary">Записаться на пробное занятие</Button>
+        <Button onClick={onClick} variant="primary">Записаться на пробное занятие</Button>
       </div>
     </div>
   );

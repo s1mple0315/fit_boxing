@@ -1,9 +1,20 @@
+import { useState } from "react";
 import BorderedCard from "../../components/BorderedCard/BorderedCard";
 import Stage from "../../components/Stages/Stages";
 import styles from "./GenericPage.module.css";
 import { Link } from "react-router-dom";
 
 const GenericPage = ({ pageData }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   const page = pageData[0];
 
   if (!page) {
@@ -29,7 +40,7 @@ const GenericPage = ({ pageData }) => {
           {page.button && (
             <div className={styles.headerButton}>
               <img src="assets/pages/buttonIcon.png" alt="" />
-              <Link to={page.button.link}>{page.button.text}</Link>
+              <Link onClick={handleButtonClick}>{page.button.text}</Link>
             </div>
           )}
         </section>
@@ -40,6 +51,8 @@ const GenericPage = ({ pageData }) => {
   return (
     <div className={styles.pageContent}>
       {renderPageTopDescription()}
+
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
 
       {page.cards && page.cards.length > 0 ? (
         <section className={styles.featuresSection}>

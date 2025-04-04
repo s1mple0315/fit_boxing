@@ -1,8 +1,20 @@
 // src/pages/MobileSchedulePage/MobileSchedulePage.jsx
 import { Link } from "react-router-dom";
+import Modal from "../../components/Modal/Modal";
 import styles from "./MobileSchedulePage.module.css";
+import { useState } from "react";
 
 const MobileSchedulePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const handleButtonClick = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
+
   return (
     <div className={styles.mobileSchedulePage}>
       <section className={styles.scheduleSection}>
@@ -11,9 +23,11 @@ const MobileSchedulePage = () => {
           <p>Удобное расписание занятий в вашем телефоне.</p>
         </div>
 
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
+
         <div className={styles.scheduleButton}>
           <img src="assets/pages/buttonIcon.png" alt="" />
-          <Link>Записаться на пробное занятие</Link>
+          <Link onClick={handleButtonClick}>Записаться на пробное занятие</Link>
         </div>
       </section>
     </div>

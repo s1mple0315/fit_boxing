@@ -10,6 +10,7 @@ import Option from "../../shared/icons/Option";
 import Check from "../../shared/icons/Check";
 
 import styles from "./HomePage.module.css";
+import Modal from "../../components/Modal/Modal";
 
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -115,7 +116,7 @@ const HomePage = () => {
     };
   }, []);
 
-  const flexDirection = isMobile ? "column" : "row"; 
+  const flexDirection = isMobile ? "column" : "row";
 
   return (
     <div className={styles.homePage}>
@@ -133,7 +134,11 @@ const HomePage = () => {
             </p>
           </div>
           <div className={`${styles.homeTitleButtons} d-flex`}>
-            <Button onClick={handleButtonClick} variant="primary" hasArrow={true}>
+            <Button
+              onClick={handleButtonClick}
+              variant="primary"
+              hasArrow={true}
+            >
               Пробное занятие
             </Button>
             <Button variant="secondary">Посмотреть тарифы</Button>
@@ -171,6 +176,7 @@ const HomePage = () => {
               price={page.price}
               image={page.image}
               cards={page.cards}
+              onClick={handleButtonClick}
             />
           ))}
         </div>
@@ -187,6 +193,7 @@ const HomePage = () => {
             trainingDirections={hall.trainingDirections}
             image={`assets/pages/halls/${hall.image}.png`}
             layout={hall.layout}
+            onClick={handleButtonClick}
           />
         ))}
       </section>
@@ -242,7 +249,9 @@ const HomePage = () => {
               </div>
             </div>
 
-            <Button variant="primary">Записаться на пробное занятие</Button>
+            <Button onClick={handleButtonClick} variant="primary">
+              Записаться на пробное занятие
+            </Button>
           </div>
         </div>
 
@@ -292,7 +301,9 @@ const HomePage = () => {
               </div>
             </div>
 
-            <Button variant="primary">Записаться на пробное занятие</Button>
+            <Button onClick={handleButtonClick} variant="primary">
+              Записаться на пробное занятие
+            </Button>
           </div>
         </div>
 
@@ -338,7 +349,9 @@ const HomePage = () => {
               </div>
             </div>
 
-            <Button variant="primary">Записаться на пробное занятие</Button>
+            <Button onClick={handleButtonClick} variant="primary">
+              Записаться на пробное занятие
+            </Button>
           </div>
         </div>
       </section>
@@ -353,7 +366,9 @@ const HomePage = () => {
           Более 50 опытных тренеров ждут вас ежедневно для конструирования
           вашего идеального тела, начните действовать прямо сейчас
         </p>
-        <Button variant="primary">Записаться</Button>
+        <Button onClick={handleButtonClick} variant="primary">
+          Записаться
+        </Button>
       </section>
     </div>
   );

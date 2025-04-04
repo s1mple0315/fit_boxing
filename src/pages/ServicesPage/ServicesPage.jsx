@@ -1,10 +1,22 @@
 import { Link } from "react-router-dom";
 
 import styles from "./ServicesPage.module.css";
+import Modal from "../../components/Modal/Modal";
 import pageData from "../../data/pages";
 import Card from "../../components/Card/Card";
+import { useState } from "react";
 
 const ServicesPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className={styles.servicesPage}>
       <section className={styles.servicesSection}>
@@ -15,9 +27,11 @@ const ServicesPage = () => {
 
         <div className={styles.serviceButton}>
           <img src="assets/pages/buttonIcon.png" alt="" />
-          <Link>Записаться на пробное занятие</Link>
+          <Link onClick={handleButtonClick}>Записаться на пробное занятие</Link>
         </div>
       </section>
+
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
 
       <section className={styles.cardsSection}>
         {pageData.map((page) => {

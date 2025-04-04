@@ -24,12 +24,11 @@ const Modal = ({ isOpen, onClose }) => {
     setSubmissionStatus("");
 
     try {
-      // Send form data to the backend using Axios
-      const response = await axios.post("http://localhost:3000/send-feedback", formData);
+      const response = await axios.post("http://localhost:8000/send-feedback", formData);
 
       if (response.status === 200) {
         setSubmissionStatus("Thank you for your feedback! We will get back to you shortly.");
-        onClose(); // Close the modal after submission
+        onClose(); 
       }
     } catch (error) {
       console.error("Error submitting feedback:", error);
@@ -39,7 +38,7 @@ const Modal = ({ isOpen, onClose }) => {
     }
   };
 
-  if (!isOpen) return null; // Don't render the modal if not open
+  if (!isOpen) return null; 
 
   return (
     <div className={styles.modal}>

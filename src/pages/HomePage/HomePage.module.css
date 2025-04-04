@@ -21,11 +21,20 @@
 }
 
 .homeTitleText > p {
+  font-family: "Inter", sans-serif;
   font-size: 20px;
 }
 
 .homeTitleButtons {
   gap: 42px;
+}
+
+.homeTitleButtons button {
+  font-family: "Inter", sans-serif;
+}
+
+.homeTitleButtons button:nth-child(2) {
+  border-radius: 18px;
 }
 
 .progress {
@@ -47,6 +56,7 @@
 }
 
 .progress > p {
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -114,7 +124,7 @@
   justify-content: center;
 }
 
-.subscribeSection{
+.subscribeSection {
   margin: 0 20px;
   padding: 123px 425px;
   display: flex;
@@ -126,7 +136,7 @@
   align-items: center;
 }
 
-.subscribeSection > h3{
+.subscribeSection > h3 {
   text-align: center;
   font-size: 61px;
   line-height: 75.5px;
@@ -134,19 +144,21 @@
   color: #fff;
 }
 
-.subscribeSection > p{
+.subscribeSection > p {
+  font-family: "Inter", sans-serif;
   width: 996px;
   text-align: center;
   font-size: 18px;
   color: #fff;
 }
 
-.subscribeSection > button{
+.subscribeSection > button {
+  font-family: "Inter", sans-serif;
   font-size: 26px;
   padding: 22px 246px;
 }
 
-.customTrainingHalls{
+.customTrainingHalls {
   margin: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -187,6 +199,7 @@
 }
 
 .customTrainingHallContent p {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 80px;
@@ -194,34 +207,35 @@
   color: #ccc;
 }
 
-.benefitsContainer{
+.benefitsContainer {
   flex: 1;
 }
 
-.benefitsContainer > h3{
+.benefitsContainer > h3 {
   font-size: 61px;
   font-weight: 700;
   line-height: 75.5px;
   margin-bottom: 50px !important;
 }
 
-.benefits{
+.benefits {
   display: flex;
   gap: 34px;
 }
 
-.benefitsContent{
+.benefitsContent {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.benefitsContent > h3{
+.benefitsContent > h3 {
   font-size: 27px;
   font-weight: 700;
 }
 
-.benefitsContent > p{
+.benefitsContent > p {
+  font-family: "Inter", sans-serif;
   font-size: 18px;
 }
 
@@ -253,10 +267,12 @@
 }
 
 .option div h3 span {
+  font-family: "Inter", sans-serif;
   color: #fedd07;
 }
 
 .option p {
+  font-family: "Inter", sans-serif;
   text-align: start;
   font-size: 27px;
   font-weight: 400;
@@ -278,6 +294,7 @@
 }
 
 .benefits li p {
+  font-family: "Inter", sans-serif;
   font-size: 27px;
   font-weight: 400;
   color: #fff;
@@ -300,17 +317,18 @@
 }
 
 .customOption > div > h3 > span {
+  font-family: "Inter", sans-serif;
   color: #fedd07 !important;
 }
 
 .customOption > div > p {
+  font-family: "Inter", sans-serif;
   text-align: start;
   font-size: 27px;
   font-weight: 400;
   color: #999;
   margin: 5px 0 0;
 }
-
 
 @media (max-width: 1770px) {
   .option div h3 {
@@ -340,7 +358,7 @@
   }
 
   .homeTitleText > h1 {
-    font-size: 80px;
+    font-size: 90px;
   }
 
   .trainingCards {
@@ -430,7 +448,7 @@
   }
 
   .homeTitleText > h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
 
   .trainingCards {
@@ -485,7 +503,7 @@
   .options {
     justify-content: space-around;
   }
-  
+
   .customOptions {
     justify-content: space-around;
   }
@@ -510,7 +528,7 @@
   }
 
   .homeTitleText > h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   .homeTitleText > p {
@@ -552,7 +570,7 @@
     gap: 20px;
   }
 
-  .imageContainer{
+  .imageContainer {
     border-radius: 70px;
   }
 
@@ -618,7 +636,7 @@
 
 @media (max-width: 768px) {
   .homeTitleText > h1 {
-    font-size: 26px;
+    font-size: 40px;
     line-height: 30px;
     margin-bottom: 20px;
   }
@@ -656,7 +674,7 @@
     line-height: 36px;
   }
 
-  .imageContainer{
+  .imageContainer {
     border-radius: 50px;
   }
 
@@ -839,7 +857,6 @@
 
   .option p {
     font-size: 16px;
-  
   }
   .customOption div h3 {
     font-size: 30px;
@@ -849,7 +866,7 @@
     font-size: 16px;
   }
 
-  .checkIconContainer > svg{
+  .checkIconContainer > svg {
     width: 100px;
     height: 100px;
   }
@@ -983,7 +1000,7 @@
     width: 80%;
   }
 
-  .benefits{
+  .benefits {
     flex-direction: column;
   }
 }

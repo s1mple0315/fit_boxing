@@ -12,6 +12,16 @@ import Check from "../../shared/icons/Check";
 import styles from "./HomePage.module.css";
 
 const HomePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   const imageRows = [
     ["1.png", "2.png", "3.png"],
     ["1.png", "2.png", "3.png"],
@@ -123,13 +133,15 @@ const HomePage = () => {
             </p>
           </div>
           <div className={`${styles.homeTitleButtons} d-flex`}>
-            <Button variant="primary" hasArrow={true}>
+            <Button onClick={handleButtonClick} variant="primary" hasArrow={true}>
               Пробное занятие
             </Button>
             <Button variant="secondary">Посмотреть тарифы</Button>
           </div>
         </div>
       </section>
+
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
 
       <NavigationGrid />
 

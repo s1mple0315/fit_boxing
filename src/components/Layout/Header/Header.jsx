@@ -26,8 +26,8 @@ const Header = () => {
           <Link to="/services">Услуги</Link>
           <Link to="/">Зоны</Link>
           <Link to="/">Абонементы</Link>
-          <Button variant="primary">Онлайн расписание</Button>
-          <Button variant="secondary">Мобильное приложение</Button>
+          <Button variant="secondary">Онлайн расписание</Button>
+          <Button variant="primary">Мобильное приложение</Button>
         </div>
 
         <div className={styles.burgerMenu} onClick={toggleMenu}>

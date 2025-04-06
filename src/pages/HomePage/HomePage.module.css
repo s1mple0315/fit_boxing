@@ -497,8 +497,8 @@
     border-radius: 80px;
   }
 
-  .imageContainer img {
-    border-radius: 100px;
+  .imageContainer > img {
+    border-radius: 40px;
   }
 
   .customTrainingHallContent > h3 {
@@ -735,7 +735,6 @@
   .customTrainingHall {
     padding: 40px 20px;
     margin-bottom: 30px;
-    border-radius: 20px;
   }
 
   .imageContainer {
@@ -766,6 +765,10 @@
 }
 
 @media (max-width: 576px) {
+  .imageContainer {
+    height: 320px;
+  }
+
   .weekdaysSection > h3 {
     font-size: 36px;
     line-height: 30px;
@@ -949,8 +952,7 @@
   }
 
   .customTrainingHall {
-    padding: 20px;
-    border-radius: 15px;
+    padding: 30px;
   }
 
   .imageContainer {
@@ -1004,5 +1006,9 @@
 
   .benefits {
     flex-direction: column;
+  }
+
+  .imageContainer {
+    height: 250px;
   }
 }

@@ -314,7 +314,6 @@ const HomePage = () => {
           <div className={styles.imageContainer}>
             <img
               src="assets/pages/halls/custom3.png"
-              style={{ borderRadius: "100px" }}
               alt="Training Hall"
             />
           </div>

@@ -166,7 +166,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={styles.trainingCardsSection}>
+      <section className={styles.trainingCardsSection}  id="tariffs">
         <h3>Выбери свой путь к совершенству</h3>
         <div className={styles.trainingCards}>
           {groupPages.map((page) => (
@@ -183,7 +183,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={styles.trainingHalls}>
+      <section className={styles.trainingHalls} id="training-zones">
         <h3>Просторные залы для спорта</h3>
         {trainingHalls.map((hall) => (
           <TrainingHall

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Button from "../../Button/Button";
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
 import BurgerMenu from "../../../shared/icons/BurgerMenu";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -24,10 +24,12 @@ const Header = () => {
 
         <div className={styles.headerNav}>
           <Link to="/services">Услуги</Link>
-          <Link to="/">Зоны</Link>
-          <Link to="/">Абонементы</Link>
+          <Link to="/#training-zones">Зоны</Link>
+          <Link to="/#tariffs">Абонементы</Link>
           <Button variant="secondary">Онлайн расписание</Button>
-          <Button variant="primary">Мобильное приложение</Button>
+          <Link to={"/mobile-schedule"}>
+            <Button variant="primary">Мобильное приложение</Button>
+          </Link>
         </div>
 
         <div className={styles.burgerMenu} onClick={toggleMenu}>

@@ -33,6 +33,10 @@
   font-family: "Inter", sans-serif;
 }
 
+.homeTitleButtons > button > .arrow > svg {
+  fill: #000;
+}
+
 .homeTitleButtons button:nth-child(2) {
   border-radius: 18px;
 }
@@ -188,6 +192,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: inherit;
 }
 
 .customTrainingHallContent {
@@ -642,10 +647,10 @@
     font-size: 42px;
     line-height: 40px;
   }
-  
+
   .homeTitleText > h1 {
     font-size: 40px;
-    line-height: 30px;
+    line-height: 50px;
     margin-bottom: 20px;
   }
 
@@ -684,6 +689,10 @@
 
   .imageContainer {
     border-radius: 50px;
+  }
+
+  .imageContainer > img {
+    border-radius: inherit;
   }
 
   .progress > p {
@@ -773,7 +782,7 @@
     font-size: 36px;
     line-height: 30px;
   }
-  
+
   .progress {
     padding: 30px 15px;
   }

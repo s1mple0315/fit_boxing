@@ -7,6 +7,8 @@ import groupPages from "../data/groupPages";
 import Map from "../components/Map/Map";
 import MobileApp from "../components/MobileApp/MobileApp";
 import breadcrumbPages from "../data/breadcrumbPages";
+// import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Accordion from "../components/Accordion/Accordion";
 
 import styles from "./Layout.module.css";
@@ -51,7 +53,10 @@ const Layout = ({ children }) => {
           breadcrumbPages={breadcrumbPages}
         />
       )}
-      <main>{children}</main>
+      <main>
+        {children}
+        {/* <SpeedInsights /> */}
+      </main>
       <section className={`${styles.mapSection} `}>
         <div
           className={`${styles.mapContainer} d-flex flex-column align-items-center`}

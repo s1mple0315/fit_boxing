@@ -9,6 +9,7 @@ const Button = ({
   onClick,
   disabled = false,
   className = "",
+  fillColor,
   ...props
 }) => {
   return (
@@ -23,7 +24,7 @@ const Button = ({
       {children}
       {hasArrow && (
         <span className={styles.arrow}>
-          <Arrow />
+          <Arrow fill={fillColor} />
         </span>
       )}
     </button>

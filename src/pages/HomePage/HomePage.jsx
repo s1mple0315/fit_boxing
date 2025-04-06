@@ -137,6 +137,7 @@ const HomePage = () => {
             <Button
               onClick={handleButtonClick}
               variant="primary"
+              fillColor={"#000"}
               hasArrow={true}
             >
               Пробное занятие

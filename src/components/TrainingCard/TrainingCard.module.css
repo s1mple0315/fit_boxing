@@ -172,3 +172,7 @@
   border: 1px solid #fff;
   cursor: pointer;
 }
+
+.trainingCardBottomButton > button > span > svg{
+  fill: #fff !important;
+}

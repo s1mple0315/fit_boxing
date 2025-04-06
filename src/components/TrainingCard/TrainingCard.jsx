@@ -29,7 +29,7 @@ const TrainingCard = ({ title, description, price, image, cards, onClick }) => {
           ))}
         </div>
         <div className={styles.trainingCardBottomButton}>
-          <Button onClick={onClick} variant="secondary" hasArrow={true}>
+          <Button onClick={onClick} variant="secondary" hasArrow={true} fillColor={"#fff"}>
             Записаться
           </Button>
         </div>

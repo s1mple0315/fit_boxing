@@ -25,7 +25,6 @@
 
 .headerContent {
   position: relative;
-  /* padding-left: 100px; */
   z-index: 2;
 }
 
@@ -83,12 +82,7 @@
   padding: 40px 20px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1440px) {
-  .headerContent {
-    /* padding-left: 90px; */
-  }
-
   .headerContent h1 {
     font-size: 80px;
     line-height: 90px;
@@ -113,10 +107,6 @@
     padding: 50px;
   }
 
-  .headerContent{
-    /* padding-left: 50px; */
-  }
-
   .featuresGrid {
     gap: 60px;
   }
@@ -135,7 +125,7 @@
     border-radius: 40px;
   }
 
-  .headerContent{
+  .headerContent {
     padding-left: 10px;
   }
 
@@ -143,10 +133,6 @@
     font-size: 75px;
     line-height: 45px;
     margin-bottom: 20px !important;
-  }
-
-  .headerContent > p {
-    /* font-size: 18px; */
   }
 
   .headerButton {

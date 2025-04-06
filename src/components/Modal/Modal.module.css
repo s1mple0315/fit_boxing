@@ -33,13 +33,13 @@
   color: #fff;
 }
 
-h2 {
+.modalContent > h2 {
   text-align: center;
   color: #ffcc00;
   margin-bottom: 10px;
 }
 
-p {
+.modalContent > p {
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
@@ -49,7 +49,7 @@ p {
   margin-bottom: 20px;
 }
 
-input {
+.formGroup > input {
   width: 100%;
   padding: 12px;
   font-size: 16px;
@@ -57,7 +57,7 @@ input {
   border: 1px solid #ccc;
 }
 
-button[type="submit"] {
+.modalContent > form > button[type="submit"] {
   width: 100%;
   padding: 12px;
   font-size: 16px;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import BorderedCard from "../../components/BorderedCard/BorderedCard";
 import Stage from "../../components/Stages/Stages";
 import styles from "./GenericPage.module.css";
+import Modal from "../../components/Modal/Modal";
 import { Link } from "react-router-dom";
 
 const GenericPage = ({ pageData }) => {

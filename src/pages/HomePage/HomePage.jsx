@@ -171,6 +171,7 @@ const HomePage = () => {
         <div className={styles.trainingCards}>
           {groupPages.map((page) => (
             <TrainingCard
+              slug={page.slug}
               key={page.slug}
               title={page.title}
               description={page.description}
@@ -187,6 +188,7 @@ const HomePage = () => {
         <h3>Просторные залы для спорта</h3>
         {trainingHalls.map((hall) => (
           <TrainingHall
+          
             key={hall.title}
             title={hall.title}
             description={hall.description}

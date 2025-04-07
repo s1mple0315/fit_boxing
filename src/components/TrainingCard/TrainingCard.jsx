@@ -2,7 +2,7 @@ import Radio from "../../shared/icons/Radio";
 import Button from "../Button/Button";
 import styles from "./TrainingCard.module.css";
 
-const TrainingCard = ({ title, description, price, image, cards, onClick }) => {
+const TrainingCard = ({slug, title, description, price, image, cards, onClick }) => {
   return (
     <div className={`${styles.trainingCardWrapper} d-flex flex-column`}>
       <div className={`${styles.trainingCardTop} position-relative`}>
@@ -29,7 +29,7 @@ const TrainingCard = ({ title, description, price, image, cards, onClick }) => {
           ))}
         </div>
         <div className={styles.trainingCardBottomButton}>
-          <Button onClick={onClick} variant="secondary" hasArrow={true} fillColor={"#fff"}>
+          <Button to={`/${slug}`} variant="secondary" hasArrow={true} fillColor={"#fff"}>
             Записаться
           </Button>
         </div>

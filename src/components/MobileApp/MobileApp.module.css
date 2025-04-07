@@ -89,7 +89,7 @@
     font-size: 15px;
   }
 
-  .downloadImages > img {
+  .downloadImages > a > img {
     width: 180px;
   }
 }

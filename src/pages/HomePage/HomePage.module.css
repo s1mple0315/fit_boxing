@@ -133,6 +133,12 @@
   justify-content: center;
 }
 
+.weekdays > img{
+  width: 480px;
+  height: 480px;
+  border-radius: 70px;
+}
+
 .subscribeSection {
   margin: 0 20px;
   padding: 123px 425px;
@@ -557,9 +563,10 @@
     flex-wrap: nowrap;
   }
 
-  .weekdays img {
-    width: auto;
-    height: auto;
+  .weekdays > img {
+    min-width: 246px !important;
+    height: 246px !important;
+    object-fit: cover;
   }
 
   .progress {

@@ -25,9 +25,9 @@ const HomePage = () => {
 
   const imageRows = [
     ["1.png", "2.png", "3.png"],
-    ["1.png", "2.png", "3.png"],
-    ["1.png", "2.png", "3.png"],
-    ["1.png", "2.png", "3.png"],
+    ["4.png", "5.png", "6.png"],
+    ["7.png", "8.png", "9.png"],
+    ["10.png", "11.png", "12.png"],
   ];
 
   const news = [
@@ -142,7 +142,9 @@ const HomePage = () => {
             >
               Пробное занятие
             </Button>
-            <Button to={"#tariffs"} variant="secondary">Посмотреть тарифы</Button>
+            <Button to={"#tariffs"} variant="secondary">
+              Посмотреть тарифы
+            </Button>
           </div>
         </div>
       </section>
@@ -188,7 +190,6 @@ const HomePage = () => {
         <h3>Просторные залы для спорта</h3>
         {trainingHalls.map((hall) => (
           <TrainingHall
-          
             key={hall.title}
             title={hall.title}
             description={hall.description}

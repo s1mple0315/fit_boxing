@@ -24,6 +24,10 @@
   color: #fff;
 }
 
+.onlineScheduleButton{
+  background-color: transparent;
+}
+
 .headerNav > a > button{
   font-family: "Inter" ;
   font-size: 18px;

@@ -26,7 +26,7 @@ const Header = () => {
           <Link to="/services">Услуги</Link>
           <Link to="/#training-zones">Зоны</Link>
           <Link to="/#tariffs">Абонементы</Link>
-          <Button variant="secondary">Онлайн расписание</Button>
+          <Link to="/online-schedule"><Button className={styles.onlineScheduleButton} variant="secondary">Онлайн расписание</Button></Link>
           <Link to={"/mobile-schedule"}>
             <Button variant="primary">Мобильное приложение</Button>
           </Link>

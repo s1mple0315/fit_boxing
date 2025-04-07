@@ -1,7 +1,8 @@
+/* Base button styles */
 .btn {
   font-family: "Inter", sans-serif;
   padding: 10px 20px;
-  border-radius: 25px; 
+  border-radius: 25px;
   font-size: 16px;
   font-weight: 400 !important;
   cursor: pointer;
@@ -10,21 +11,22 @@
   justify-content: center;
   transition: all 0.3s ease;
   border: none;
+  text-decoration: none; 
 }
 
 .btn-primary {
   background-color: #FEDD07;
-  color: #000; 
+  color: #000;
 }
 
 .btn-secondary {
-  background-color: #000; 
-  color: #fff; 
-  border: 1.24px solid #fff; 
+  background-color: #000;
+  color: #fff;
+  border: 1.24px solid #fff;
 }
 
 .btn-with-arrow {
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 
 .arrow {
@@ -32,6 +34,26 @@
 }
 
 .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+a.btn {
+  text-decoration: none; 
+  display: inline-flex;  
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;    
+  border-radius: 25px;   
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+  transition: all 0.3s ease;
+  cursor: pointer;  
+  color: #fff;    
+}
+
+a.btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }

@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
         </div>
       </section>
 
-      <section>
+      <section id="mobile-app">
         <MobileApp />
       </section>
 

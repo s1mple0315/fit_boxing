@@ -142,7 +142,7 @@ const HomePage = () => {
             >
               Пробное занятие
             </Button>
-            <Button variant="secondary">Посмотреть тарифы</Button>
+            <Button to={"#tariffs"} variant="secondary">Посмотреть тарифы</Button>
           </div>
         </div>
       </section>

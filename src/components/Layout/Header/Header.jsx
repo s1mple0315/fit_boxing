@@ -24,10 +24,14 @@ const Header = () => {
 
         <div className={styles.headerNav}>
           <Link to="/services">Услуги</Link>
-          <Link to="/#training-zones">Зоны</Link>
+          <Link to="#training-zones">Зоны</Link>
           <Link to="/#tariffs">Абонементы</Link>
-          <Link to="/online-schedule"><Button className={styles.onlineScheduleButton} variant="secondary">Онлайн расписание</Button></Link>
-          <Link to={"/mobile-schedule"}>
+          <Link to="/online-schedule">
+            <Button className={styles.onlineScheduleButton} variant="secondary">
+              Онлайн расписание
+            </Button>
+          </Link>
+          <Link to={"#mobile-app"}>
             <Button variant="primary">Мобильное приложение</Button>
           </Link>
         </div>
@@ -53,18 +57,22 @@ const Header = () => {
           <Link to="/services" onClick={toggleMenu}>
             Услуги
           </Link>
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="#training-zones" onClick={toggleMenu}>
             Зоны
           </Link>
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/#tariffs" onClick={toggleMenu}>
             Абонементы
           </Link>
-          <Button variant="primary" onClick={toggleMenu}>
-            Онлайн расписание
-          </Button>
-          <Button variant="secondary" onClick={toggleMenu}>
-            Мобильное приложение
-          </Button>
+          <Link to="/online-schedule">
+            <Button variant="primary" onClick={toggleMenu}>
+              Онлайн расписание
+            </Button>
+          </Link>
+          <Link to="#mobile-app" onClick={toggleMenu}>
+            <Button variant="secondary" onClick={toggleMenu}>
+              Мобильное приложение
+            </Button>
+          </Link>
         </div>
       </div>
     </>

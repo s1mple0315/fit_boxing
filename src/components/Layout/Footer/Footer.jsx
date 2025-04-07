@@ -1,4 +1,3 @@
-// src/components/Footer/Footer.jsx
 import { Link } from "react-router-dom";
 import LocationPin from "../../../shared/icons/LocationPin";
 import Telegram from "../../../shared/icons/Telegram";
@@ -114,7 +113,6 @@ const Footer = () => {
         <p>Политика конфиденциальности</p>
         <p>Договор оферты</p>
         <p>Положение о защите персональных данных</p>
-        <p>Разработка сайта</p>
       </div>
     </div>
   );

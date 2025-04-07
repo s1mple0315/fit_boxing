@@ -21,8 +21,12 @@ const ServicesPage = () => {
     <div className={styles.servicesPage}>
       <section className={styles.servicesSection}>
         <div className={styles.serviceContent}>
-          <h1>Мобильное расписание занятий</h1>
-          <p>Удобное расписание занятий в вашем телефоне.</p>
+          <h1>Услуги нашего фитнеса</h1>
+          <p>
+            Фитнес для детей и взрослых в оборудованных залах. Форматы
+            тренировок: индивидуальные, сплит (2 человека), малая группа (до 8
+            человек)..
+          </p>
         </div>
 
         <div className={styles.serviceButton}>

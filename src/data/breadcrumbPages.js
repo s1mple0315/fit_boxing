@@ -10,10 +10,10 @@ const breadcrumbPages = [
     },
   },
   {
-    slug: "mobile-schedule",
-    title: "Мобильное расписание",
+    slug: "online-schedule",
+    title: "Онлайн расписание",
     topDescription: {
-      title: "Мобильное расписание занятий",
+      title: "Онлайн расписание занятий",
       description: "Удобное расписание занятий в вашем телефоне.",
     },
   },

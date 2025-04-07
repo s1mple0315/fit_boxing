@@ -25,7 +25,7 @@ const Breadcrumb = ({ pageData, groupPages, breadcrumbPages }) => {
         <li>/</li>
         <li>
           {currentPage ? (
-            <span>{currentPage.topDescription.title}</span>
+            <span>{currentPage.title}</span>
           ) : (
             <span>Page Not Found</span>
           )}

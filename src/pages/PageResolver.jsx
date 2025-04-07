@@ -1,11 +1,11 @@
 // src/pages/PageResolver.jsx
-import { useParams } from 'react-router-dom';
-import GenericPage from './GenericPage/GenericPage';
-import ServicesPage from './ServicesPage/ServicesPage';
-import MobileSchedulePage from './MobileSchedulePage/MobileSchedulePage'; // We'll create this next
-import pageData from '../data/pages';
-import groupPages from '../data/groupPages';
-import breadcrumbPages from '../data/breadcrumbPages';
+import { useParams } from "react-router-dom";
+import GenericPage from "./GenericPage/GenericPage";
+import ServicesPage from "./ServicesPage/ServicesPage";
+import MobileSchedulePage from "./MobileSchedulePage/MobileSchedulePage"; // We'll create this next
+import pageData from "../data/pages";
+import groupPages from "../data/groupPages";
+import breadcrumbPages from "../data/breadcrumbPages";
 
 const PageResolver = () => {
   const { slug } = useParams();
@@ -28,7 +28,7 @@ const PageResolver = () => {
     if (pageFromBreadcrumbPages.slug === "services") {
       return <ServicesPage />;
     }
-    if (pageFromBreadcrumbPages.slug === "mobile-schedule") {
+    if (pageFromBreadcrumbPages.slug === "online-schedule") {
       return <MobileSchedulePage />;
     }
   }

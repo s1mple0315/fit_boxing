@@ -53,10 +53,7 @@ const Layout = ({ children }) => {
           breadcrumbPages={breadcrumbPages}
         />
       )}
-      <main>
-        {children}
-        {/* <SpeedInsights /> */}
-      </main>
+      <main>{children}</main>
       <section className={`${styles.mapSection} `}>
         <div
           className={`${styles.mapContainer} d-flex flex-column align-items-center`}

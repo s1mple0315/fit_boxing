@@ -6,20 +6,20 @@ import { useState } from "react";
 
 const MobileSchedulePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
-    const handleButtonClick = () => {
-      setIsModalOpen(true);
-    };
-  
-    const handleCloseModal = () => {
-      setIsModalOpen(false);
-    };
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className={styles.mobileSchedulePage}>
       <section className={styles.scheduleSection}>
         <div className={styles.scheduleContent}>
-          <h1>Мобильное расписание занятий</h1>
+          <h1>Онлайн расписание занятий</h1>
           <p>Удобное расписание занятий в вашем телефоне.</p>
         </div>
 

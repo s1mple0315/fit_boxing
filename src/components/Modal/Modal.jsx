@@ -24,21 +24,28 @@ const Modal = ({ isOpen, onClose }) => {
     setSubmissionStatus("");
 
     try {
-      const response = await axios.post("http://localhost:8000/send-feedback", formData);
+      const response = await axios.post(
+        "http://localhost:8000/send-feedback",
+        formData
+      );
 
       if (response.status === 200) {
-        setSubmissionStatus("Thank you for your feedback! We will get back to you shortly.");
-        onClose(); 
+        setSubmissionStatus(
+          "Thank you for your feedback! We will get back to you shortly."
+        );
+        onClose();
       }
     } catch (error) {
       console.error("Error submitting feedback:", error);
-      setSubmissionStatus("There was an error submitting your feedback. Please try again later.");
+      setSubmissionStatus(
+        "There was an error submitting your feedback. Please try again later."
+      );
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  if (!isOpen) return null; 
+  if (!isOpen) return null;
 
   return (
     <div className={styles.modal}>
@@ -51,6 +58,7 @@ const Modal = ({ isOpen, onClose }) => {
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <input
+              className={styles.nameInputField}
               type="text"
               name="name"
               placeholder="Введите имя"
@@ -61,6 +69,7 @@ const Modal = ({ isOpen, onClose }) => {
           </div>
           <div className={styles.formGroup}>
             <input
+              className={styles.numberInputField}
               type="text"
               name="phone_number"
               placeholder="+7"
@@ -69,7 +78,11 @@ const Modal = ({ isOpen, onClose }) => {
               required
             />
           </div>
-          <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
+          <button
+            type="submit"
+            className={styles.submitButton}
+            disabled={isSubmitting}
+          >
             {isSubmitting ? "Submitting..." : "Оставить заявку"}
           </button>
         </form>
@@ -77,7 +90,9 @@ const Modal = ({ isOpen, onClose }) => {
           Оставляя заявку вы соглашаетесь с{" "}
           <a href="/privacy-policy">политикой конфиденциальности</a>
         </p>
-        {submissionStatus && <p className={styles.statusMessage}>{submissionStatus}</p>}
+        {submissionStatus && (
+          <p className={styles.statusMessage}>{submissionStatus}</p>
+        )}
       </div>
     </div>
   );

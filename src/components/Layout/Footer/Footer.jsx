@@ -7,6 +7,7 @@ import groupPages from "../../../data/groupPages";
 import breadcrumbPages from "../../../data/breadcrumbPages";
 
 import styles from "./Footer.module.css";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -72,8 +73,8 @@ const Footer = () => {
               </li>
             ))}
             <li>
-              <Link
-                to={"/"}
+              <HashLink
+                to={"#tariffs"}
                 style={{
                   color: "#fff",
                   textDecoration: "none",
@@ -81,7 +82,7 @@ const Footer = () => {
                 }}
               >
                 Абонементы
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </div>

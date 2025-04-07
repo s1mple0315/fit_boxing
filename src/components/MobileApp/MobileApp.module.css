@@ -36,7 +36,7 @@
   gap: 20px;
 }
 
-.downloadImages > img {
+.downloadImages a > img {
   width: 253px;
 }
 

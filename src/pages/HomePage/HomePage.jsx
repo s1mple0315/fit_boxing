@@ -166,7 +166,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={styles.trainingCardsSection}  id="tariffs">
+      <section className={styles.trainingCardsSection} id="tariffs">
         <h3>Выбери свой путь к совершенству</h3>
         <div className={styles.trainingCards}>
           {groupPages.map((page) => (
@@ -313,10 +313,7 @@ const HomePage = () => {
           style={{ flexDirection }}
         >
           <div className={styles.imageContainer}>
-            <img
-              src="assets/pages/halls/custom3.png"
-              alt="Training Hall"
-            />
+            <img src="assets/pages/halls/custom3.png" alt="Training Hall" />
           </div>
           <div
             className={`${styles.customTrainingHallContent} d-flex flex-column`}

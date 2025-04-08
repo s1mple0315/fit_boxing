@@ -168,7 +168,7 @@ const groupPages = [
     slug: "split-training",
     title: "Сплит тренировки",
     description:
-      "Дуо тренировки в парах для повышения эффективности и мотивации.",
+      "Дуо тренировки в парах для повышения мотивации.",
     price: "7000р",
     image: "split-training",
     type: "card-based",
